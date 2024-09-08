@@ -11,7 +11,7 @@ Join us for **Planet Nix**, a gathering dedicated to discussing and advancing th
 ### **Event Details**
 
 **When:**  
-March 7-8, 2025
+March 6-7, 2025
 
 **Where:**  
 Pasadena Convention Center  
