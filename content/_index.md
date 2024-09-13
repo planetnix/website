@@ -4,7 +4,7 @@ template: "base.html"
 # PlanetNix
 ## Call for Proposals
 
-Join us for **Planet Nix**, a gathering dedicated to discussing and advancing the **Nix** ecosystem. Whether you're a developer, contributor, or user of Nix, we invite you to share your knowledge, ideas, and innovations.
+Join us for **PlanetNix**, a gathering dedicated to discussing and advancing the **Nix** ecosystem. Whether you're a developer, contributor, or user of Nix, we invite you to share your knowledge, ideas, and innovations.
 
 ---
 
