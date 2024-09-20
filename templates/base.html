@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Planet Nix</title>
+    <title>
+      {% block title %}Planet Nix{% endblock %}
+    </title>
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
+    {% include 'components/hero.html' %}
+    <!-- {% include 'components/navigation.html' %} -->
     <div class="content">
         {% block content %}
         {{ section.content | safe }}
