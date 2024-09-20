@@ -8,7 +8,7 @@
   </head>
   <body>
     {% include 'components/hero.html' %}
-    <!-- {% include 'components/navigation.html' %} -->
+    {% include 'components/navigation.html' %}
     <div class="content">
         {% block content %}
         {{ section.content | safe }}

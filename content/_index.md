@@ -1,7 +1,8 @@
 ---
 template: "base.html"
 ---
-## Call for Proposals
+
+## About
 
 Join us for **Planet Nix**, a gathering dedicated to discussing and advancing the [Nix](https://nixos.org/) ecosystem. Whether you're a developer, contributor, or user of Nix, we invite you to share your knowledge, ideas, and innovations.
 
@@ -10,7 +11,7 @@ Wondering what to expect at Planet Nix? Watch the talks from [NixCon NA 2024](ht
 
 ---
 
-### **Event Details**
+## **Location**
 
 **When:**  
 March 6th-7th, 2025
@@ -22,7 +23,7 @@ Pasadena, CA 91101
 
 ---
 
-### **Call for Proposals (CFP)**
+## **Call for Proposals (CFP)**
 
 We are excited to invite speakers, workshop leaders, and panelists to submit proposals for **Planet Nix**! We're looking for engaging talks and workshops related to:
 
@@ -36,10 +37,9 @@ We are excited to invite speakers, workshop leaders, and panelists to submit pro
 
 If you're passionate about Nix, this is your opportunity to share your expertise and ideas with a vibrant community.
 
-#### **Submission Deadline:**  
-**December 1, 2024**
+### **Submission Deadline:** **December 9th, 2024**
 
-#### **How to Submit:**
+### **How to Submit:**
 
 Please submit your proposal by filling out the [submission form](#) with the following details:
 
