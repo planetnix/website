@@ -1,0 +1,39 @@
+header {
+    background-color: #1f1f1f; 
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-bottom: 1px solid #383737;
+}
+
+.nav-header {
+    color: #fff;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+    
+        li {
+            flex: 1; /* Ensures all items take up equal width */
+            text-align: center;
+            height: 100%;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                height: 100%;
+                padding: 1em 0;
+    
+                &:hover {
+                    background: rgba(0,0,0,.3);
+                }
+            }
+        }
+    }
+}
