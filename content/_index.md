@@ -25,7 +25,7 @@ Pasadena, CA 91101
 
 ## **Call for Proposals (CFP)**
 
-We are excited to invite speakers, workshop leaders, and panelists to submit proposals for **Planet Nix**! We're looking for engaging talks and workshops related to:
+We are excited to invite speakers, workshop leaders, and panelists to [submit proposals](https://sessionize.com/planet-nix-2025/) for **Planet Nix**! We're looking for engaging talks and workshops related to:
 
 - Nix package management and ecosystem
 - NixOS configuration management
@@ -41,7 +41,7 @@ If you're passionate about Nix, this is your opportunity to share your expertise
 
 ### **How to Submit:**
 
-Please submit your proposal by filling out the [submission form](#) with the following details:
+Please submit your proposal by filling out the [submission form](https://sessionize.com/planet-nix-2025/) with the following details:
 
 - Title of your talk or workshop
 - Abstract (200-300 words)
