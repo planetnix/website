@@ -1,0 +1,273 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "alejandra": {
+        "pkg-path": "alejandra"
+      },
+      "zola": {
+        "pkg-path": "zola"
+      }
+    },
+    "hook": {
+      "on-activate": "zola build"
+    },
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    },
+    "services": {
+      "zola": {
+        "command": "zola.serve",
+        "vars": null,
+        "is-daemon": null,
+        "shutdown": null,
+        "systems": null
+      }
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "alejandra",
+      "broken": false,
+      "derivation": "/nix/store/iskgw41h5vik2z8y65if9myci1y2q5wy-alejandra-3.0.0.drv",
+      "description": "Uncompromising Nix Code Formatter",
+      "install_id": "alejandra",
+      "license": "Unlicense",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "alejandra-3.0.0",
+      "pname": "alejandra",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7i7w442b7qbvndcly667ki2lx07cxjb7-alejandra-3.0.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "alejandra",
+      "broken": false,
+      "derivation": "/nix/store/x7f6hkd6ywki96fmwxlxqkw8jnvx05rb-alejandra-3.0.0.drv",
+      "description": "Uncompromising Nix Code Formatter",
+      "install_id": "alejandra",
+      "license": "Unlicense",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "alejandra-3.0.0",
+      "pname": "alejandra",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bb28xm8lb8zjj7r3z3dx9bn81jk7lw4c-alejandra-3.0.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "alejandra",
+      "broken": false,
+      "derivation": "/nix/store/vdfl7krlwa770a3y77lgfaqyjcsxrrpp-alejandra-3.0.0.drv",
+      "description": "Uncompromising Nix Code Formatter",
+      "install_id": "alejandra",
+      "license": "Unlicense",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "alejandra-3.0.0",
+      "pname": "alejandra",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/g978mwxzzba9zrg8ailhyb888k4l2s8d-alejandra-3.0.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "alejandra",
+      "broken": false,
+      "derivation": "/nix/store/l1xivan4x8i863sfafj3xz1n1k08awd0-alejandra-3.0.0.drv",
+      "description": "Uncompromising Nix Code Formatter",
+      "install_id": "alejandra",
+      "license": "Unlicense",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "alejandra-3.0.0",
+      "pname": "alejandra",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/920avawymlv2nazw11cnpb7k6nyyr190-alejandra-3.0.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zola",
+      "broken": false,
+      "derivation": "/nix/store/pq4xi2pknys48is24h37a347m4n8fbax-zola-0.19.2.drv",
+      "description": "Fast static site generator with everything built-in",
+      "install_id": "zola",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "zola-0.19.2",
+      "pname": "zola",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rv4illrymvjxm1gihw6dhmsd2ycnv05s-zola-0.19.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zola",
+      "broken": false,
+      "derivation": "/nix/store/x0skhg2vwhdb0j7dnznhp8rk48f64cph-zola-0.19.2.drv",
+      "description": "Fast static site generator with everything built-in",
+      "install_id": "zola",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "zola-0.19.2",
+      "pname": "zola",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/x24pskvksnh3y4r4y61prydjf9x1szm3-zola-0.19.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zola",
+      "broken": false,
+      "derivation": "/nix/store/r88ybqphhlf2p130wig6qxbyw4gpmhnv-zola-0.19.2.drv",
+      "description": "Fast static site generator with everything built-in",
+      "install_id": "zola",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "zola-0.19.2",
+      "pname": "zola",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rinvp0jy5n9iz3nz44dw2y0i3bqfy52c-zola-0.19.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zola",
+      "broken": false,
+      "derivation": "/nix/store/b3d2ccrfbl0jn08k51gdxmin0gvd202f-zola-0.19.2.drv",
+      "description": "Fast static site generator with everything built-in",
+      "install_id": "zola",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "name": "zola-0.19.2",
+      "pname": "zola",
+      "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+      "rev_count": 694395,
+      "rev_date": "2024-10-18T13:02:40Z",
+      "scrape_date": "2024-10-20T03:56:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8mw7ahqwx38j505n8al1hl9ncdzand1j-zola-0.19.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
