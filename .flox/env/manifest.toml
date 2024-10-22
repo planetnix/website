@@ -2,7 +2,6 @@ version = 1
 
 [install]
 zola.pkg-path = "zola"
-alejandra.pkg-path = "alejandra"
 
 [hook]
 on-activate = "zola build"
