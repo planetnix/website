@@ -1,0 +1,13 @@
+version = 1
+
+[install]
+zola.pkg-path = "zola"
+
+[hook]
+on-activate = "zola build"
+
+[services]
+zola.command = "zola.serve"
+
+[options]
+systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
