@@ -48,7 +48,7 @@ There will be two tracks across two days. The schedule will provide for a mix of
 
 If you're passionate about Nix, this is your opportunity to share your expertise and ideas with a vibrant community.
 
-### **Submission Deadline:** **December 9th, 2024**
+### **Submission Deadline:** **January 6, 2025**
 
 ### **How to Submit:**
 
