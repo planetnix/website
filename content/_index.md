@@ -1,5 +1,5 @@
 ---
-template: "base.html"
+template: "home.html"
 ---
 
 ## About the Event

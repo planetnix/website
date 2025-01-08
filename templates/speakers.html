@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% set speakers = load_data(path="data/speakers-filtered.json", format="json") %}
+  {{ page.content | safe }}
+  {% for speaker in speakers %}
+    <div class="speaker-item">
+      <h2>{{ speaker.firstName }} {{ speaker.lastName }}</h2>
+      <p>{{ speaker.bio }}</p>
+      <h3>Sessions</h3>
+        <ul>
+            {% for session in speaker.sessions %}
+            <li>{{ session.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+  {% endfor %}
+{% endblock %}

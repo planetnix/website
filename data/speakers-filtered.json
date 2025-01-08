@@ -1,0 +1,101 @@
+[
+  {
+    "id": "2c38eaac-07ea-4b63-9886-7c143aa42b61",
+    "firstName": "Jacek",
+    "lastName": "Galowicz",
+    "fullName": "Jacek Galowicz",
+    "bio": "Long-time Nix user, maintainer of the NixOS integration test driver, C++ book author",
+    "tagLine": "Nixcademy Founder",
+    "profilePicture": "https://sessionize.com/image/b5d6-400o400o1-D3oD1hdfZfvSsz9xN4VYWn.jpg",
+    "sessions": [
+      {
+        "id": 781777,
+        "name": "Mastering NixOS Integration Tests: Advanced Techniques for Fast and Robust Multi-VM Tests"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "553a1395-8d10-4501-b78a-92f27f9e3acc",
+    "firstName": "Rickard",
+    "lastName": "Nilsson",
+    "fullName": "Rickard Nilsson",
+    "bio": "Rickard Nilsson has worked as a freelancing Nix/NixOS expert for over a decade. Five years ago he founded nixbuild.net, which is an advanced scalable build cluster for Nix offered both as a cloud service and for enterprise deployment.",
+    "tagLine": "Founder of nixbuild.net",
+    "profilePicture": "https://sessionize.com/image/0a81-400o400o1-HJ3AUetGXjT7ZuHV6urUAy.jpg",
+    "sessions": [
+      {
+        "id": 788310,
+        "name": "Remote Nix Builds"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "a189ab4e-2522-4eb3-8dee-a434352871f8",
+    "firstName": "Ron",
+    "lastName": "Efroni Rotman",
+    "fullName": "Ron Efroni Rotman",
+    "bio": "Ron is CEO and co-founder of Flox and President of the NixOS Foundation. A former software engineer and leader in large-scale product development, Ron led developer products at Meta, supporting 20,000+ engineers. Realizing the limitations of existing tooling and recognizing the superpowers of Nix, Ron co-founded Flox to grow Nix and make it accessible to the wider engineering community.",
+    "tagLine": "CEO/Co-Founder  at flox and Board Member/Treasurer at the NixOS Foundation",
+    "profilePicture": "https://sessionize.com/image/4aee-400o400o1-Jm6Sqvz8oaZfTrWMwqAg3R.jpg",
+    "sessions": [
+      {
+        "id": 818323,
+        "name": "A Sustainable Nix, State of the Union"
+      },
+      {
+        "id": 826938,
+        "name": "Fireside Chat with Kelsey Hightower & Ron Efroni: An Outsider’s Look at Nix"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "099484d8-5be9-4029-9063-68864cd56172",
+    "firstName": "Tristan",
+    "lastName": "Ross",
+    "fullName": "Tristan Ross",
+    "bio": "Low level programmer, OS/Zig/Linux dev, Nixpkgs committer (LLVM). Likes to watch 大空スバル (Subaru Oozora).",
+    "tagLine": "LLVM team member",
+    "profilePicture": "https://sessionize.com/image/c8ee-400o400o1-DuKKCMQALeyhf7cSwmS3ee.png",
+    "sessions": [
+      {
+        "id": 800454,
+        "name": "The Nix PR Pipeline"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "707a6c55-2771-4022-9e86-95588bc0ad15",
+    "firstName": "Yannik",
+    "lastName": "Sander",
+    "fullName": "Yannik Sander",
+    "bio": "Nix user and contributed for 5+ years, who brought flake support to search.nixos.org and mentored at summer of nix.\r\nNow bringing nix to work at Flox.",
+    "tagLine": "Software Engineer at Flox, bored with the common.",
+    "profilePicture": "https://sessionize.com/image/3619-400o400o1-L1CmG9dqkvCHHnY4LDwtjo.jpg",
+    "sessions": [
+      {
+        "id": 785474,
+        "name": "Nix is faster than no evaluation"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  }
+]
