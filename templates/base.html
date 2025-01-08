@@ -20,9 +20,10 @@
   <body>
     {% include 'components/hero.html' %}
     {% include 'components/navigation.html' %}
+    {% block before_content %}
+    {% endblock %}
     <div class="content">
         {% block content %}
-        {{ section.content | safe }}
         {% endblock %}   
     </div>
   </body>

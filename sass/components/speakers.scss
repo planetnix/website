@@ -1,0 +1,43 @@
+.speakers {
+    min-height: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+}
+
+.speaker-container {
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    color: #0a0a2a;
+
+}
+
+.speaker-container h2 {
+    margin: 0;
+    padding: 2rem;
+}
+
+.speaker img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.speaker h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.speaker p {
+    margin-top: 0;
+}
+.speaker {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
