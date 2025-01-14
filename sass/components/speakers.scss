@@ -14,7 +14,6 @@
     text-align: center;
     background-color: #272727;
     color: #ffffff;
-
 }
 
 .speaker-container h2 {
@@ -39,5 +38,24 @@
     margin: 1rem;
     padding: 1rem;
     text-align: center;
-  }
+}
+
+.speaker-item {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    .speaker-image {
+        grid-column: 1 / 2;
+
+        img {
+            width: 100%;
+            margin-top: 1.4rem;
+            border-radius: 100%;
+        }
+    }
+    .speaker-info {
+        grid-column: 2;
+    }
+}
 

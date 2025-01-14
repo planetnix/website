@@ -18,6 +18,10 @@ header {
 
         display: flex;
     
+        li.active a {
+            background: rgba(0,0,0,.3);
+        }
+
         li {
             flex: 1; /* Ensures all items take up equal width */
             text-align: center;

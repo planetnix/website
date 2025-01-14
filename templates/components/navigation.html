@@ -2,10 +2,18 @@
   <nav class="nav-header container">
     <ul>
       <li>
-        <a href="#about">About</a>
+        <a href="/#about">About</a>
       </li>
       <li>
-        <a href="#location">Location</a>
+        <a href="/#location">Location</a>
+      </li>
+      <li
+      {% if current_path == '/speakers/' %}
+        class="active"
+      {% endif %}>
+        <a 
+        href="/speakers"
+        >Speakers</a>
       </li>
       <!-- <li>
         <a href="#call-for-proposals-cfp">CFP</a>
