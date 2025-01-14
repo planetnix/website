@@ -9,7 +9,11 @@ load_data(path="data/speakers-filtered.json", format="json") %} {{ page.content
     />
   </div>
   <div class="speaker-info">
-    <h2>{{ speaker.firstName }} {{ speaker.lastName }}</h2>
+    <h2 id="{{ speaker.firstName | lower }}-{{ speaker.lastName | lower | replace(from=` `, to=`-`) }}">
+      <a href="#{{ speaker.firstName | lower }}-{{ speaker.lastName | lower | replace(from=` `, to=`-`) }}">
+      {{ speaker.firstName }} {{ speaker.lastName }}
+    </a>
+    </h2>
     <p>{{ speaker.bio }}</p>
     <h3>Sessions</h3>
     <ul>
