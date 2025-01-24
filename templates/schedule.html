@@ -17,7 +17,13 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
     <div class="schedule-room-items">
 
       {% for session in room.sessions %}
-      <div class="schedule-item">
+      <div class="schedule-item"
+      
+        style="grid-row:  time-{{ session.startsAt | date(format="%H%M") }} /  time-{{ session.endsAt | date(format="%H%M") }};"
+      >
+       
+       
+
           <span class="time">
           {{ session.startsAt | date(format="%H:%M") }} - {{ session.endsAt |
             date(format="%H:%M") }}
