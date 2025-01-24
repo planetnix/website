@@ -1,21 +1,34 @@
-{% extends 'base.html' %} {% block content %} {% set schedule =
+{% extends 'base.html' %} {% block content %}
+
+{% set schedule =
 load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
+
 {% for day_content in schedule %}
-<h2>{{ day_content.date | date(format="%Y-%m-%d") }}</h2>
-{% for room in day_content.rooms %}
-<h3>{{ room.name }}</h3>
-{% for session in room.sessions %}
-<div class="schedule-room">
-  <div class="schedule-item">
-    <div>
-      {{ session.startsAt | date(format="%H:%M") }} - {{ session.endsAt |
-      date(format="%H:%M") }}
-    </div>
-    <div>{{ session.title }}</div>
-    {% for speaker in session.speakers %}
-    <div>{{ speaker.name }}</div>
-    {% endfor %}
-    <div>{{ session.description }}</div>
+<div class="schedule-day">
+  <div class="schedule-day-header">
+    <h2>{{ day_content.date | date(format="%Y-%m-%d") }}</h2>
   </div>
+  {% for room in day_content.rooms %}
+  <div class="schedule-room">
+    <h3>{{ room.name }}</h3>
+    {% for session in room.sessions %}
+      <div class="schedule-item">
+        <div>
+          {{ session.startsAt | date(format="%H:%M") }} - {{ session.endsAt |
+          date(format="%H:%M") }}
+        </div>
+        <div>{{ session.title }}</div>
+        {% for speaker in session.speakers %}
+        <div>{{ speaker.name }}</div>
+        {% endfor %}
+        <div>{{ session.description }}</div>
+      </div>
+      
+      {% endfor %} 
+    </div>
+  {% endfor %} 
+
 </div>
-{% endfor %} {% endfor %} {% endfor %} {% endblock %}
+{% endfor %} 
+
+{% endblock %}
