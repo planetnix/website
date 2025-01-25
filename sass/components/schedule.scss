@@ -4,41 +4,46 @@
   margin-bottom: 1rem;
 }
 
-.schedule-room-items{
+body.schedule-as-grid .schedule-day .schedule-room-items{
   display: grid;
   grid-template-rows: 
-    [time-0915] 1fr
-    [time-0930] 1fr
-    [time-0945] 1fr
-    [time-1000] 1fr
-    [time-1015] 1fr
-    [time-1030] 1fr
-    [time-1045] 1fr
-    [time-1100] 1fr
-    [time-1115] 1fr
-    [time-1130] 1fr
-    [time-1145] 1fr
-    [time-1200] 1fr
-    [time-1215] 1fr
-    [time-1230] 1fr
-    [time-1245] 1fr
-    [time-1300] 1fr
-    [time-1315] 1fr
-    [time-1330] 1fr
-    [time-1345] 1fr
-    [time-1400] 1fr
-    [time-1415] 1fr
-    [time-1430] 1fr
-    [time-1445] 1fr
-    [time-1500] 1fr
-    [time-1515] 1fr
-    [time-1530] 1fr
-    [time-1545] 1fr
-    [time-1600] 1fr
-    [time-1615] 1fr
-    [time-1630] 1fr
-    [time-1645] 1fr
-    [time-1700] 1fr;
+    [time-0915] 10ch
+    [time-0930] 10ch
+    [time-0945] 10ch
+    [time-1000] 10ch
+    [time-1015] 10ch
+    [time-1030] 10ch
+    [time-1045] 10ch
+    [time-1100] 10ch
+    [time-1115] 10ch
+    [time-1130] 10ch
+    [time-1145] 10ch
+    [time-1200] 10ch
+    [time-1215] 10ch
+    [time-1230] 10ch
+    [time-1245] 10ch
+    [time-1300] 10ch
+    [time-1315] 10ch
+    [time-1330] 10ch
+    [time-1345] 10ch
+    [time-1400] 10ch
+    [time-1415] 10ch
+    [time-1430] 10ch
+    [time-1445] 10ch
+    [time-1500] 10ch
+    [time-1515] 10ch
+    [time-1530] 10ch
+    [time-1545] 10ch
+    [time-1600] 10ch
+    [time-1615] 10ch
+    [time-1630] 10ch
+    [time-1645] 10ch
+    [time-1700] 10ch;
+}
+
+
+body.schedule-as-grid p.schedule-description {
+  display: none;
 }
 
 .schedule-day {

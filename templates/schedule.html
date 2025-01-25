@@ -3,6 +3,13 @@
 {% set schedule =
 load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
 
+<div>
+
+  <input type="checkbox" id="schedule-show-as-grid" /> 
+  <label for="schedule-show-as-grid">Show as grid</label>
+</div>
+
+
 {% for day_content in schedule %}
 <div class="schedule-day">
   <div class="schedule-day-header">
@@ -21,9 +28,6 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
       
         style="grid-row:  time-{{ session.startsAt | date(format="%H%M") }} /  time-{{ session.endsAt | date(format="%H%M") }};"
       >
-       
-       
-
           <span class="time">
           {{ session.startsAt | date(format="%H:%M") }} - {{ session.endsAt |
             date(format="%H:%M") }}
@@ -35,7 +39,7 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
             <span>{{ speaker.name }}</span>
             {% endfor %}
           </div>
-          <div>{{ session.description }}</div>
+          <p class="schedule-description">{{ session.description }}</p>
       </div>
         
       {% endfor %} 
@@ -46,5 +50,18 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
 
 </div>
 {% endfor %} 
+
+<script>
+  const $SchedduleInputToggle = document.getElementById('schedule-show-as-grid');
+  const $Body = document.body;
+
+  $SchedduleInputToggle.addEventListener('change', () => {
+    if ($SchedduleInputToggle.checked) {
+      $Body.classList.add('schedule-as-grid');
+    } else {
+      $Body.classList.remove('schedule-as-grid');
+    }
+  });
+</script>
 
 {% endblock %}
