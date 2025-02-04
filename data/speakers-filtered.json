@@ -99,7 +99,7 @@
     "firstName": "Farid",
     "lastName": "Zakaria",
     "fullName": "Farid Zakaria",
-    "bio": "I am a software engineer, father, and wishful surfer.\r\nI currently work at Google and am also pursuing a Ph.D. in computer science at the University of California Santa Cruz.\r\n\r\nMore relevant to Nix, I am a NixOS enthusiast, which has led me to rethink basic Linux primitives.",
+    "bio": "I am a software engineer, father, and wishful surfer.\r\nI currently work at Confluent and am also pursuing a Ph.D. in computer science at the University of California Santa Cruz.\r\n\r\nMore relevant to Nix, I am a NixOS enthusiast, which has led me to rethink basic Linux primitives.",
     "tagLine": "Engineering Manager, PhD Student and Nix enthusiast at Google",
     "profilePicture": "https://sessionize.com/image/073c-400o400o1-NK85f8Nxs6usD2jjEfWtzX.jpg",
     "sessions": [
@@ -332,12 +332,12 @@
     "profilePicture": "https://sessionize.com/image/4aee-400o400o1-Jm6Sqvz8oaZfTrWMwqAg3R.jpg",
     "sessions": [
       {
-        "id": 818323,
-        "name": "A Sustainable Nix, State of the Union"
-      },
-      {
         "id": 826938,
         "name": "Fireside Chat with Kelsey Hightower & Ron Efroni: An Outsider’s Look at Nix"
+      },
+      {
+        "id": 818323,
+        "name": "A Sustainable Nix, State of the Union"
       }
     ],
     "isTopSpeaker": false,
@@ -407,7 +407,7 @@
     "firstName": "Tristan",
     "lastName": "Ross",
     "fullName": "Tristan Ross",
-    "bio": "Low level programmer, OS/Zig/Linux dev, Nixpkgs committer (LLVM). Likes to watch 大空スバル (Subaru Oozora).",
+    "bio": "Low level programmer, OS/Zig/Linux dev, Nixpkgs & LLVM committer. Likes to watch 大空スバル (Subaru Oozora).",
     "tagLine": "LLVM team member",
     "profilePicture": "https://sessionize.com/image/c8ee-400o400o1-DuKKCMQALeyhf7cSwmS3ee.png",
     "sessions": [
@@ -428,7 +428,7 @@
     "fullName": "Victor Fuentes",
     "bio": "Currently I'm a platform engineer at Replit. I've been using Nix since 2021. In my free time, enjoy working on tooling to make NixOS easier to use.",
     "tagLine": "Platform Engineer @ Replit",
-    "profilePicture": "https://sessionize.com/image/1c74-400o400o1-aADgNMVWGceZFEeaebdSSD.jpg",
+    "profilePicture": "https://sessionize.com/image/9df6-400o400o1-RF8uj9FETwLU7wX55bWzxU.jpg",
     "sessions": [
       {
         "id": 828375,
