@@ -3,11 +3,25 @@
 {% set schedule =
 load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
 
-<div>
+<nav class="schedule-navigation">
+  <div class="left">
+    <h2>
+      Schedule
+    </h2>
+  </div>
 
-  <input type="checkbox" id="schedule-show-as-grid" /> 
-  <label for="schedule-show-as-grid">Show as grid</label>
-</div>
+  <div class="schedule-navigation-options right">
+    <input type="checkbox" id="schedule-show-as-grid" /> &nbsp; 
+    <label for="schedule-show-as-grid">Hide descriptions and align to grid</label>
+  </div>
+
+  <div class="schedule-navigation-footer">
+    <p>
+      The schedule is also available as an iCal file. You can download it <a href="https://sessionize.com/api/v2/2xppsysq/view/All"> here.
+      </a>
+    </p>
+  </div>
+</nav>
 
 
 {% for day_content in schedule %}

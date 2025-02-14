@@ -1,3 +1,32 @@
+.schedule-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .left, .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .left {
+    justify-content: left;
+  }
+
+  .right {
+    justify-content: right;
+  }
+
+  .schedule-navigation-footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-navigation {
+    padding: 2ch;
+  }
+}
+
 .schedule-room {
   grid-template-columns: 1fr;
   gap: 1rem;

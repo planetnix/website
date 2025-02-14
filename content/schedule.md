@@ -1,6 +1,3 @@
 ---
 template: "schedule.html"
 ---
-
-## Schedule
-
