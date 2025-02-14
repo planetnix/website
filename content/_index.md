@@ -1,5 +1,6 @@
 ---
 template: "home.html"
+title: "Home"
 ---
 
 ## About the Event
