@@ -1,6 +1,4 @@
 ---
 template: "schedule.html"
+title: "Schedule"
 ---
-
-## Schedule
-

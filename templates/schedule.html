@@ -3,6 +3,27 @@
 {% set schedule =
 load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
 
+<nav class="schedule-navigation">
+  <div class="left">
+    <h2>
+      Schedule
+    </h2>
+  </div>
+
+  <div class="schedule-navigation-options right">
+    <input type="checkbox" id="schedule-show-as-grid" /> &nbsp; 
+    <label for="schedule-show-as-grid">Hide descriptions and align to grid</label>
+  </div>
+
+  <div class="schedule-navigation-footer">
+    <p>
+      The schedule is also available as an iCal file. You can download it <a href="https://sessionize.com/api/v2/2xppsysq/view/All"> here.
+      </a>
+    </p>
+  </div>
+</nav>
+
+
 {% for day_content in schedule %}
 <div class="schedule-day">
   <div class="schedule-day-header">
@@ -17,7 +38,10 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
     <div class="schedule-room-items">
 
       {% for session in room.sessions %}
-      <div class="schedule-item">
+      <div class="schedule-item"
+      
+        style="grid-row:  time-{{ session.startsAt | date(format="%H%M") }} /  time-{{ session.endsAt | date(format="%H%M") }};"
+      >
           <span class="time">
           {{ session.startsAt | date(format="%H:%M") }} - {{ session.endsAt |
             date(format="%H:%M") }}
@@ -29,7 +53,7 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
             <span>{{ speaker.name }}</span>
             {% endfor %}
           </div>
-          <div>{{ session.description }}</div>
+          <p class="schedule-description">{{ session.description }}</p>
       </div>
         
       {% endfor %} 
@@ -40,5 +64,18 @@ load_data(path="data/schedule.json", format="json") %} {{ page.content | safe }}
 
 </div>
 {% endfor %} 
+
+<script>
+  const $SchedduleInputToggle = document.getElementById('schedule-show-as-grid');
+  const $Body = document.body;
+
+  $SchedduleInputToggle.addEventListener('change', () => {
+    if ($SchedduleInputToggle.checked) {
+      $Body.classList.add('schedule-as-grid');
+    } else {
+      $Body.classList.remove('schedule-as-grid');
+    }
+  });
+</script>
 
 {% endblock %}
