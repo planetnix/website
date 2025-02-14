@@ -1,0 +1,11 @@
+.social-bar {
+    display: flex;
+    justify-content: center;
+    gap: 4ch;
+    padding: 2ch 0;
+    .social-icon {
+        filter: invert(1);
+        display: block;
+        width: 3ch;
+    }
+}
