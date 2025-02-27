@@ -29,6 +29,11 @@ Pasadena Convention Center
 300 E Green St  
 Pasadena, CA 91101
 
+**Registration:**
+Planet Nix is part of the SCALE conference. Either a full SCALE Pass or Expo Pass will provide entrance to Planet Nix. [Register here](https://register.socallinuxexpo.org/reg6/).
+
+There is an additional option to purchase a Planet Nix swag bag, but this is not required to attend the event.
+
 ---
 
 Wondering what to expect at Planet Nix? Watch the talks from [NixCon NA 2024](https://2024-na.nixcon.org/recordings/).

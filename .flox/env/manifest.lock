@@ -25,11 +25,7 @@
     },
     "services": {
       "zola": {
-        "command": "zola serve",
-        "vars": null,
-        "is-daemon": null,
-        "shutdown": null,
-        "systems": null
+        "command": "zola serve"
       }
     }
   },
