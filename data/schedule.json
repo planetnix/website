@@ -223,17 +223,17 @@
             "isConfirmed": true
           },
           {
-            "id": "799243",
-            "title": "How to make Nix five times faster",
-            "description": "I have a confession: I love Nix. So much so, that I want to use it to build all my software. But there's a catch - why is Nix so slow?\r\n\r\nMy search for answers began with a bash loop run amok, and ends with Fantail - a new frontend development server powered by Nix and Haskell, with builds 5x faster than the Nix CLI.\r\n\r\nIf you've ever looked up at the sky and wondered if it's possible to use the Nix C++ interface to cache Flake inputs in-memory, this is the talk for you. If not, come along anyway!",
+            "id": "788310",
+            "title": "Remote Nix Builds",
+            "description": "Nix has builtin support for distributing builds to remote machines. In fact, any SSH-accessible computer with a Nix installation can be used as a build server!\r\n\r\nIn this talk, I'll give an overview on how remote Nix builds work in practice, and talk about their possibilities and limitations. I'll also lift the lid on Nix and show how the remote builder protocol works.\r\n\r\nFinally I'll mention some improvements I'd like to see in Nix, based on my experience on implementing the nixbuild.net service.",
             "startsAt": "2025-03-06T11:30:00",
             "endsAt": "2025-03-06T12:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
               {
-                "id": "981ae663-934b-4c1e-837b-2e62a9b9d7e4",
-                "name": "Nick Johnstone"
+                "id": "553a1395-8d10-4501-b78a-92f27f9e3acc",
+                "name": "Rickard Nilsson"
               }
             ],
             "categories": [
@@ -253,8 +253,8 @@
                 "name": "Level",
                 "categoryItems": [
                   {
-                    "id": 297623,
-                    "name": "Advanced"
+                    "id": 297622,
+                    "name": "Intermediate"
                   }
                 ],
                 "sort": 1
@@ -262,16 +262,7 @@
               {
                 "id": 83880,
                 "name": "Tags",
-                "categoryItems": [
-                  {
-                    "id": 297633,
-                    "name": "Development environments"
-                  },
-                  {
-                    "id": 297634,
-                    "name": "Reproducible builds"
-                  }
-                ],
+                "categoryItems": [],
                 "sort": 3
               }
             ],
@@ -1321,17 +1312,17 @@
             "id": 56320,
             "name": "Room 1",
             "session": {
-              "id": "799243",
-              "title": "How to make Nix five times faster",
-              "description": "I have a confession: I love Nix. So much so, that I want to use it to build all my software. But there's a catch - why is Nix so slow?\r\n\r\nMy search for answers began with a bash loop run amok, and ends with Fantail - a new frontend development server powered by Nix and Haskell, with builds 5x faster than the Nix CLI.\r\n\r\nIf you've ever looked up at the sky and wondered if it's possible to use the Nix C++ interface to cache Flake inputs in-memory, this is the talk for you. If not, come along anyway!",
+              "id": "788310",
+              "title": "Remote Nix Builds",
+              "description": "Nix has builtin support for distributing builds to remote machines. In fact, any SSH-accessible computer with a Nix installation can be used as a build server!\r\n\r\nIn this talk, I'll give an overview on how remote Nix builds work in practice, and talk about their possibilities and limitations. I'll also lift the lid on Nix and show how the remote builder protocol works.\r\n\r\nFinally I'll mention some improvements I'd like to see in Nix, based on my experience on implementing the nixbuild.net service.",
               "startsAt": "2025-03-06T11:30:00",
               "endsAt": "2025-03-06T12:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
                 {
-                  "id": "981ae663-934b-4c1e-837b-2e62a9b9d7e4",
-                  "name": "Nick Johnstone"
+                  "id": "553a1395-8d10-4501-b78a-92f27f9e3acc",
+                  "name": "Rickard Nilsson"
                 }
               ],
               "categories": [
@@ -1351,8 +1342,8 @@
                   "name": "Level",
                   "categoryItems": [
                     {
-                      "id": 297623,
-                      "name": "Advanced"
+                      "id": 297622,
+                      "name": "Intermediate"
                     }
                   ],
                   "sort": 1
@@ -1360,16 +1351,7 @@
                 {
                   "id": 83880,
                   "name": "Tags",
-                  "categoryItems": [
-                    {
-                      "id": 297633,
-                      "name": "Development environments"
-                    },
-                    {
-                      "id": 297634,
-                      "name": "Reproducible builds"
-                    }
-                  ],
+                  "categoryItems": [],
                   "sort": 3
                 }
               ],
@@ -2216,17 +2198,17 @@
             "isConfirmed": true
           },
           {
-            "id": "788310",
-            "title": "Remote Nix Builds",
-            "description": "Nix has builtin support for distributing builds to remote machines. In fact, any SSH-accessible computer with a Nix installation can be used as a build server!\r\n\r\nIn this talk, I'll give an overview on how remote Nix builds work in practice, and talk about their possibilities and limitations. I'll also lift the lid on Nix and show how the remote builder protocol works.\r\n\r\nFinally I'll mention some improvements I'd like to see in Nix, based on my experience on implementing the nixbuild.net service.",
+            "id": "779179",
+            "title": "Using remote builders in Nix",
+            "description": "This talk demonstrates setting up a system for remote building with a SIFIVE P550.",
             "startsAt": "2025-03-07T11:30:00",
             "endsAt": "2025-03-07T12:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
               {
-                "id": "553a1395-8d10-4501-b78a-92f27f9e3acc",
-                "name": "Rickard Nilsson"
+                "id": "099484d8-5be9-4029-9063-68864cd56172",
+                "name": "Tristan Ross"
               }
             ],
             "categories": [
@@ -2246,8 +2228,8 @@
                 "name": "Level",
                 "categoryItems": [
                   {
-                    "id": 297622,
-                    "name": "Intermediate"
+                    "id": 297621,
+                    "name": "Introductory and overview"
                   }
                 ],
                 "sort": 1
@@ -2255,7 +2237,12 @@
               {
                 "id": 83880,
                 "name": "Tags",
-                "categoryItems": [],
+                "categoryItems": [
+                  {
+                    "id": 297635,
+                    "name": "Hardware"
+                  }
+                ],
                 "sort": 3
               }
             ],
@@ -2264,8 +2251,8 @@
             "liveUrl": null,
             "recordingUrl": null,
             "status": "Accepted",
-            "isInformed": true,
-            "isConfirmed": true
+            "isInformed": false,
+            "isConfirmed": false
           },
           {
             "id": "acbeb03e-7ad9-435b-8524-c2c8b59be538",
@@ -2474,7 +2461,7 @@
           },
           {
             "id": "812536",
-            "title": "Python on Nix? Yes, it is possible!",
+            "title": "Nix on Python? Yes, it is possible!",
             "description": "Want to leverage the powerful features of the Nix ecosystem, but you don't want to learn the Nix programming language? This talk will show you how you can use Python and the python-nix library to easily create Nix packages in a way that it is appealing for both Nix and Python programmers.",
             "startsAt": "2025-03-07T11:30:00",
             "endsAt": "2025-03-07T12:00:00",
@@ -2983,17 +2970,17 @@
             "id": 56320,
             "name": "Room 1",
             "session": {
-              "id": "788310",
-              "title": "Remote Nix Builds",
-              "description": "Nix has builtin support for distributing builds to remote machines. In fact, any SSH-accessible computer with a Nix installation can be used as a build server!\r\n\r\nIn this talk, I'll give an overview on how remote Nix builds work in practice, and talk about their possibilities and limitations. I'll also lift the lid on Nix and show how the remote builder protocol works.\r\n\r\nFinally I'll mention some improvements I'd like to see in Nix, based on my experience on implementing the nixbuild.net service.",
+              "id": "779179",
+              "title": "Using remote builders in Nix",
+              "description": "This talk demonstrates setting up a system for remote building with a SIFIVE P550.",
               "startsAt": "2025-03-07T11:30:00",
               "endsAt": "2025-03-07T12:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
                 {
-                  "id": "553a1395-8d10-4501-b78a-92f27f9e3acc",
-                  "name": "Rickard Nilsson"
+                  "id": "099484d8-5be9-4029-9063-68864cd56172",
+                  "name": "Tristan Ross"
                 }
               ],
               "categories": [
@@ -3013,8 +3000,8 @@
                   "name": "Level",
                   "categoryItems": [
                     {
-                      "id": 297622,
-                      "name": "Intermediate"
+                      "id": 297621,
+                      "name": "Introductory and overview"
                     }
                   ],
                   "sort": 1
@@ -3022,7 +3009,12 @@
                 {
                   "id": 83880,
                   "name": "Tags",
-                  "categoryItems": [],
+                  "categoryItems": [
+                    {
+                      "id": 297635,
+                      "name": "Hardware"
+                    }
+                  ],
                   "sort": 3
                 }
               ],
@@ -3031,8 +3023,8 @@
               "liveUrl": null,
               "recordingUrl": null,
               "status": "Accepted",
-              "isInformed": true,
-              "isConfirmed": true
+              "isInformed": false,
+              "isConfirmed": false
             },
             "index": 0
           },
@@ -3041,7 +3033,7 @@
             "name": "Room 2",
             "session": {
               "id": "812536",
-              "title": "Python on Nix? Yes, it is possible!",
+              "title": "Nix on Python? Yes, it is possible!",
               "description": "Want to leverage the powerful features of the Nix ecosystem, but you don't want to learn the Nix programming language? This talk will show you how you can use Python and the python-nix library to easily create Nix packages in a way that it is appealing for both Nix and Python programmers.",
               "startsAt": "2025-03-07T11:30:00",
               "endsAt": "2025-03-07T12:00:00",
