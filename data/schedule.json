@@ -27,8 +27,8 @@
           },
           {
             "id": "826938",
-            "title": "Fireside Chat with Kelsey Hightower & Ron Efroni: An Outsider's Look at Nix",
-            "description": "We've all heard the usual insider talks about Nix. This session flips the script. Ron Efroni will lead a candid fireside chat with Kelsey Hightower, known for his pioneering work on Kubernetes, as we dive into his journey discovering Nix. Expect blunt takes on where Nix gets it right, where it needs a reality check, and what lessons from container orchestration might apply. If you're curious about the raw, unfiltered truth of Nix's present and future, don't miss it.",
+            "title": "Fireside Chat with Kelsey Hightower & Ron Efroni: An Outsider’s Look at Nix",
+            "description": "We’ve all heard the usual insider talks about Nix. This session flips the script. Ron Efroni will lead a candid fireside chat with Kelsey Hightower, known for his pioneering work on Kubernetes, as we dive into his journey discovering Nix. Expect blunt takes on where Nix gets it right, where it needs a reality check, and what lessons from container orchestration might apply. If you’re curious about the raw, unfiltered truth of Nix’s present and future, don’t miss it.",
             "startsAt": "2025-03-06T09:30:00",
             "endsAt": "2025-03-06T10:00:00",
             "isServiceSession": false,
@@ -164,9 +164,9 @@
           {
             "id": "828508",
             "title": "Docker Was Too Slow, So We Replaced It: Nix in Production",
-            "description": "Kubernetes means containers - but container images stop scaling once you hit 25+ GB, even if you're building them with Nix. Learn how Anthropic took production startup times from minutes to sub-second with a multi-level, replicated cache hierarchy. We'll deep dive into nix-sidecar: our custom tool to escape Docker, replacing slow image pulls with highly-parallel native Nix fetches, cached on every node. This talk is for anyone interested in faster deploys or advanced Nix usage!\r\n",
-            "startsAt": "2025-03-06T11:00:00",
-            "endsAt": "2025-03-06T11:30:00",
+            "description": "Kubernetes means containers - but container images stop scaling once you hit 25+ GB, even if you’re building them with Nix. Learn how Anthropic took production startup times from minutes to sub-second with a multi-level, replicated cache hierarchy. We’ll deep dive into nix-sidecar: our custom tool to escape Docker, replacing slow image pulls with highly-parallel native Nix fetches, cached on every node. This talk is for anyone interested in faster deploys or advanced Nix usage!\r\n",
+            "startsAt": "2025-03-06T11:30:00",
+            "endsAt": "2025-03-06T12:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -226,8 +226,8 @@
             "id": "788310",
             "title": "Remote Nix Builds",
             "description": "Nix has builtin support for distributing builds to remote machines. In fact, any SSH-accessible computer with a Nix installation can be used as a build server!\r\n\r\nIn this talk, I'll give an overview on how remote Nix builds work in practice, and talk about their possibilities and limitations. I'll also lift the lid on Nix and show how the remote builder protocol works.\r\n\r\nFinally I'll mention some improvements I'd like to see in Nix, based on my experience on implementing the nixbuild.net service.",
-            "startsAt": "2025-03-06T11:30:00",
-            "endsAt": "2025-03-06T12:00:00",
+            "startsAt": "2025-03-06T12:00:00",
+            "endsAt": "2025-03-06T12:30:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -278,8 +278,8 @@
             "id": "f1082e80-a723-430b-8c96-5cc11acb399e",
             "title": "Lunch",
             "description": null,
-            "startsAt": "2025-03-06T12:00:00",
-            "endsAt": "2025-03-06T13:30:00",
+            "startsAt": "2025-03-06T12:30:00",
+            "endsAt": "2025-03-06T14:00:00",
             "isServiceSession": true,
             "isPlenumSession": false,
             "speakers": [],
@@ -296,8 +296,8 @@
             "id": "827327",
             "title": "Nix in the Wild",
             "description": "Nix in the Wild is a series where we interview users of Nix and ask them about their journey. We want to know about the good moments and the bad, and we want to tell it like it is.\r\n\r\nWhat makes users choose Nix? How long does it take for them to get their colleagues onboard? What do they learn along the way?\r\n\r\nIn this quick talk, Ross from Flox will go over a few of the most amazing stories from Nix in the Wild (rawr!)...and let you know how we can help you tell yours.",
-            "startsAt": "2025-03-06T13:30:00",
-            "endsAt": "2025-03-06T14:00:00",
+            "startsAt": "2025-03-06T14:00:00",
+            "endsAt": "2025-03-06T14:30:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -348,8 +348,8 @@
             "id": "827364",
             "title": "Using /opt/store",
             "description": "Exploring the pros-cons of a non-/nix prefix.",
-            "startsAt": "2025-03-06T14:00:00",
-            "endsAt": "2025-03-06T14:30:00",
+            "startsAt": "2025-03-06T14:30:00",
+            "endsAt": "2025-03-06T15:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -400,8 +400,8 @@
             "id": "0acb680e-ca5c-4b05-89d2-7d9e3d8ffbe9",
             "title": "Break",
             "description": null,
-            "startsAt": "2025-03-06T14:30:00",
-            "endsAt": "2025-03-06T15:00:00",
+            "startsAt": "2025-03-06T15:00:00",
+            "endsAt": "2025-03-06T15:30:00",
             "isServiceSession": true,
             "isPlenumSession": false,
             "speakers": [],
@@ -418,8 +418,8 @@
             "id": "812622",
             "title": "Charming wild snakes with pyproject.nix & uv2nix",
             "description": "Pip, Conda, Poetry, and now, the Rust-based Uv. Python is a complex ecosystem fraught with pitfalls, fragmentation & historic legacy.\r\nNix provides a unifying way to deal with complex software environments. However, language integration tooling for Python has been lacking.\r\n\r\nIn this talk we'll explore pyproject.nix & uv2nix to wrangle everything from simple projects using requirements.txt & pyproject.toml to complex applications and monorepos.\r\n",
-            "startsAt": "2025-03-06T15:00:00",
-            "endsAt": "2025-03-06T15:30:00",
+            "startsAt": "2025-03-06T15:30:00",
+            "endsAt": "2025-03-06T16:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -475,8 +475,8 @@
             "id": "785474",
             "title": "Nix is faster than no evaluation",
             "description": "Evaluating packages with big dependency trees with nix is time consuming.\r\nCurrently, while there is a local eval cache, evaluation costs are sum up locally but also globally as eval caches are generally not shared across machine or user boundaries.\r\nIn other places such as searching packages, evaluation is impossible, prohibitively expensive, or just annoying.\r\nIn this talk I want to introduce different approaches to avoid evaluations, how they are motivated and what their limits are.",
-            "startsAt": "2025-03-06T15:30:00",
-            "endsAt": "2025-03-06T16:00:00",
+            "startsAt": "2025-03-06T16:00:00",
+            "endsAt": "2025-03-06T16:30:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -527,8 +527,8 @@
             "id": "da6c7180-bf2b-49be-9fdd-2084dd6f8897",
             "title": "Break",
             "description": null,
-            "startsAt": "2025-03-06T16:00:00",
-            "endsAt": "2025-03-06T16:30:00",
+            "startsAt": "2025-03-06T16:30:00",
+            "endsAt": "2025-03-06T17:00:00",
             "isServiceSession": true,
             "isPlenumSession": false,
             "speakers": [],
@@ -545,8 +545,8 @@
             "id": "f3d0ef08-efcd-43dc-b146-24068078cbe0",
             "title": "Lightning Talks",
             "description": null,
-            "startsAt": "2025-03-06T16:30:00",
-            "endsAt": "2025-03-06T17:30:00",
+            "startsAt": "2025-03-06T17:00:00",
+            "endsAt": "2025-03-06T18:00:00",
             "isServiceSession": true,
             "isPlenumSession": false,
             "speakers": [],
@@ -645,8 +645,8 @@
             "id": "797417",
             "title": "generating secrets with nixos, the missing puzzle piece",
             "description": "There are a lot of different secret management technologies around nixos, like sops-nix, agenix, etc.\r\n\r\nAll of them still require to manually generate and encrypt secrets though. So we are happy to announce the missing piece to have full declarative services with zero user interaction:\r\n\r\nNixOS vars (name will maybe change :))",
-            "startsAt": "2025-03-06T11:00:00",
-            "endsAt": "2025-03-06T11:30:00",
+            "startsAt": "2025-03-06T11:30:00",
+            "endsAt": "2025-03-06T12:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -701,8 +701,8 @@
             "id": "811729",
             "title": "Building Linux from Scratch... from Nix",
             "description": "Nix is a powerful build system that enhances and simplifies software development workflows. 'Linux from Scratch' is a well-known guide to building a customized Linux operating system from source, designed for gaining a deeper understanding Linux system internals. In this talk, we will share the journey of using Nix to build Linux from Scratch, as well as the challenges faced, insights gained, and epiphanies discovered along the way.",
-            "startsAt": "2025-03-06T11:30:00",
-            "endsAt": "2025-03-06T12:00:00",
+            "startsAt": "2025-03-06T12:00:00",
+            "endsAt": "2025-03-06T12:30:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -753,8 +753,8 @@
             "id": "2860641d-b48b-4a20-8636-a7a34164f880",
             "title": "Lunch",
             "description": null,
-            "startsAt": "2025-03-06T12:00:00",
-            "endsAt": "2025-03-06T13:30:00",
+            "startsAt": "2025-03-06T12:30:00",
+            "endsAt": "2025-03-06T14:00:00",
             "isServiceSession": true,
             "isPlenumSession": false,
             "speakers": [],
@@ -770,9 +770,9 @@
           {
             "id": "800712",
             "title": "Introduction to the Module System",
-            "description": "Curious about the Nix module system but don't know where to start? This talk introduces the core concepts and basics of the Nix module system, designed for those new to Nix. We'll break down how it works, why it's so powerful for declarative configuration, and how you can start using it for your own projects. No prior experience is required—just a willingness to explore and learn!",
-            "startsAt": "2025-03-06T13:30:00",
-            "endsAt": "2025-03-06T15:00:00",
+            "description": "Curious about the Nix module system but don’t know where to start? This talk introduces the core concepts and basics of the Nix module system, designed for those new to Nix. We’ll break down how it works, why it’s so powerful for declarative configuration, and how you can start using it for your own projects. No prior experience is required—just a willingness to explore and learn!",
+            "startsAt": "2025-03-06T14:00:00",
+            "endsAt": "2025-03-06T15:30:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -827,9 +827,9 @@
           {
             "id": "781777",
             "title": "Mastering NixOS Integration Tests: Advanced Techniques for Fast and Robust Multi-VM Tests",
-            "description": "Join this hands-on workshop to explore the powerful NixOS Integration Test Driver! In just two hours, learn to simulate complex networked environments with multiple hosts and virtual networks, use the interactive mode for debugging, and apply best practices to avoid flaky tests. Perfect for enhancing your NixOS testing skills and streamlining CI/CD pipelines. Don't miss this chance to boost your expertise with reliable, real-world testing techniques!",
-            "startsAt": "2025-03-06T15:00:00",
-            "endsAt": "2025-03-06T16:30:00",
+            "description": "Join this hands-on workshop to explore the powerful NixOS Integration Test Driver! In just two hours, learn to simulate complex networked environments with multiple hosts and virtual networks, use the interactive mode for debugging, and apply best practices to avoid flaky tests. Perfect for enhancing your NixOS testing skills and streamlining CI/CD pipelines. Don’t miss this chance to boost your expertise with reliable, real-world testing techniques!",
+            "startsAt": "2025-03-06T15:30:00",
+            "endsAt": "2025-03-06T17:00:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -930,8 +930,8 @@
             "name": "Room 1",
             "session": {
               "id": "826938",
-              "title": "Fireside Chat with Kelsey Hightower & Ron Efroni: An Outsider's Look at Nix",
-              "description": "We've all heard the usual insider talks about Nix. This session flips the script. Ron Efroni will lead a candid fireside chat with Kelsey Hightower, known for his pioneering work on Kubernetes, as we dive into his journey discovering Nix. Expect blunt takes on where Nix gets it right, where it needs a reality check, and what lessons from container orchestration might apply. If you're curious about the raw, unfiltered truth of Nix's present and future, don't miss it.",
+              "title": "Fireside Chat with Kelsey Hightower & Ron Efroni: An Outsider’s Look at Nix",
+              "description": "We’ve all heard the usual insider talks about Nix. This session flips the script. Ron Efroni will lead a candid fireside chat with Kelsey Hightower, known for his pioneering work on Kubernetes, as we dive into his journey discovering Nix. Expect blunt takes on where Nix gets it right, where it needs a reality check, and what lessons from container orchestration might apply. If you’re curious about the raw, unfiltered truth of Nix’s present and future, don’t miss it.",
               "startsAt": "2025-03-06T09:30:00",
               "endsAt": "2025-03-06T10:00:00",
               "isServiceSession": false,
@@ -1174,7 +1174,7 @@
         ]
       },
       {
-        "slotStart": "11:00:00",
+        "slotStart": "11:30:00",
         "rooms": [
           {
             "id": 56320,
@@ -1182,9 +1182,9 @@
             "session": {
               "id": "828508",
               "title": "Docker Was Too Slow, So We Replaced It: Nix in Production",
-              "description": "Kubernetes means containers - but container images stop scaling once you hit 25+ GB, even if you're building them with Nix. Learn how Anthropic took production startup times from minutes to sub-second with a multi-level, replicated cache hierarchy. We'll deep dive into nix-sidecar: our custom tool to escape Docker, replacing slow image pulls with highly-parallel native Nix fetches, cached on every node. This talk is for anyone interested in faster deploys or advanced Nix usage!\r\n",
-              "startsAt": "2025-03-06T11:00:00",
-              "endsAt": "2025-03-06T11:30:00",
+              "description": "Kubernetes means containers - but container images stop scaling once you hit 25+ GB, even if you’re building them with Nix. Learn how Anthropic took production startup times from minutes to sub-second with a multi-level, replicated cache hierarchy. We’ll deep dive into nix-sidecar: our custom tool to escape Docker, replacing slow image pulls with highly-parallel native Nix fetches, cached on every node. This talk is for anyone interested in faster deploys or advanced Nix usage!\r\n",
+              "startsAt": "2025-03-06T11:30:00",
+              "endsAt": "2025-03-06T12:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1249,8 +1249,8 @@
               "id": "797417",
               "title": "generating secrets with nixos, the missing puzzle piece",
               "description": "There are a lot of different secret management technologies around nixos, like sops-nix, agenix, etc.\r\n\r\nAll of them still require to manually generate and encrypt secrets though. So we are happy to announce the missing piece to have full declarative services with zero user interaction:\r\n\r\nNixOS vars (name will maybe change :))",
-              "startsAt": "2025-03-06T11:00:00",
-              "endsAt": "2025-03-06T11:30:00",
+              "startsAt": "2025-03-06T11:30:00",
+              "endsAt": "2025-03-06T12:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1306,7 +1306,7 @@
         ]
       },
       {
-        "slotStart": "11:30:00",
+        "slotStart": "12:00:00",
         "rooms": [
           {
             "id": 56320,
@@ -1315,8 +1315,8 @@
               "id": "788310",
               "title": "Remote Nix Builds",
               "description": "Nix has builtin support for distributing builds to remote machines. In fact, any SSH-accessible computer with a Nix installation can be used as a build server!\r\n\r\nIn this talk, I'll give an overview on how remote Nix builds work in practice, and talk about their possibilities and limitations. I'll also lift the lid on Nix and show how the remote builder protocol works.\r\n\r\nFinally I'll mention some improvements I'd like to see in Nix, based on my experience on implementing the nixbuild.net service.",
-              "startsAt": "2025-03-06T11:30:00",
-              "endsAt": "2025-03-06T12:00:00",
+              "startsAt": "2025-03-06T12:00:00",
+              "endsAt": "2025-03-06T12:30:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1372,8 +1372,8 @@
               "id": "811729",
               "title": "Building Linux from Scratch... from Nix",
               "description": "Nix is a powerful build system that enhances and simplifies software development workflows. 'Linux from Scratch' is a well-known guide to building a customized Linux operating system from source, designed for gaining a deeper understanding Linux system internals. In this talk, we will share the journey of using Nix to build Linux from Scratch, as well as the challenges faced, insights gained, and epiphanies discovered along the way.",
-              "startsAt": "2025-03-06T11:30:00",
-              "endsAt": "2025-03-06T12:00:00",
+              "startsAt": "2025-03-06T12:00:00",
+              "endsAt": "2025-03-06T12:30:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1425,7 +1425,7 @@
         ]
       },
       {
-        "slotStart": "12:00:00",
+        "slotStart": "12:30:00",
         "rooms": [
           {
             "id": 56320,
@@ -1434,8 +1434,8 @@
               "id": "f1082e80-a723-430b-8c96-5cc11acb399e",
               "title": "Lunch",
               "description": null,
-              "startsAt": "2025-03-06T12:00:00",
-              "endsAt": "2025-03-06T13:30:00",
+              "startsAt": "2025-03-06T12:30:00",
+              "endsAt": "2025-03-06T14:00:00",
               "isServiceSession": true,
               "isPlenumSession": false,
               "speakers": [],
@@ -1457,8 +1457,8 @@
               "id": "2860641d-b48b-4a20-8636-a7a34164f880",
               "title": "Lunch",
               "description": null,
-              "startsAt": "2025-03-06T12:00:00",
-              "endsAt": "2025-03-06T13:30:00",
+              "startsAt": "2025-03-06T12:30:00",
+              "endsAt": "2025-03-06T14:00:00",
               "isServiceSession": true,
               "isPlenumSession": false,
               "speakers": [],
@@ -1476,7 +1476,7 @@
         ]
       },
       {
-        "slotStart": "13:30:00",
+        "slotStart": "14:00:00",
         "rooms": [
           {
             "id": 56320,
@@ -1485,8 +1485,8 @@
               "id": "827327",
               "title": "Nix in the Wild",
               "description": "Nix in the Wild is a series where we interview users of Nix and ask them about their journey. We want to know about the good moments and the bad, and we want to tell it like it is.\r\n\r\nWhat makes users choose Nix? How long does it take for them to get their colleagues onboard? What do they learn along the way?\r\n\r\nIn this quick talk, Ross from Flox will go over a few of the most amazing stories from Nix in the Wild (rawr!)...and let you know how we can help you tell yours.",
-              "startsAt": "2025-03-06T13:30:00",
-              "endsAt": "2025-03-06T14:00:00",
+              "startsAt": "2025-03-06T14:00:00",
+              "endsAt": "2025-03-06T14:30:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1541,9 +1541,9 @@
             "session": {
               "id": "800712",
               "title": "Introduction to the Module System",
-              "description": "Curious about the Nix module system but don't know where to start? This talk introduces the core concepts and basics of the Nix module system, designed for those new to Nix. We'll break down how it works, why it's so powerful for declarative configuration, and how you can start using it for your own projects. No prior experience is required—just a willingness to explore and learn!",
-              "startsAt": "2025-03-06T13:30:00",
-              "endsAt": "2025-03-06T15:00:00",
+              "description": "Curious about the Nix module system but don’t know where to start? This talk introduces the core concepts and basics of the Nix module system, designed for those new to Nix. We’ll break down how it works, why it’s so powerful for declarative configuration, and how you can start using it for your own projects. No prior experience is required—just a willingness to explore and learn!",
+              "startsAt": "2025-03-06T14:00:00",
+              "endsAt": "2025-03-06T15:30:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1600,7 +1600,7 @@
         ]
       },
       {
-        "slotStart": "14:00:00",
+        "slotStart": "14:30:00",
         "rooms": [
           {
             "id": 56320,
@@ -1609,8 +1609,8 @@
               "id": "827364",
               "title": "Using /opt/store",
               "description": "Exploring the pros-cons of a non-/nix prefix.",
-              "startsAt": "2025-03-06T14:00:00",
-              "endsAt": "2025-03-06T14:30:00",
+              "startsAt": "2025-03-06T14:30:00",
+              "endsAt": "2025-03-06T15:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1662,7 +1662,7 @@
         ]
       },
       {
-        "slotStart": "14:30:00",
+        "slotStart": "15:00:00",
         "rooms": [
           {
             "id": 56320,
@@ -1671,8 +1671,8 @@
               "id": "0acb680e-ca5c-4b05-89d2-7d9e3d8ffbe9",
               "title": "Break",
               "description": null,
-              "startsAt": "2025-03-06T14:30:00",
-              "endsAt": "2025-03-06T15:00:00",
+              "startsAt": "2025-03-06T15:00:00",
+              "endsAt": "2025-03-06T15:30:00",
               "isServiceSession": true,
               "isPlenumSession": false,
               "speakers": [],
@@ -1690,7 +1690,7 @@
         ]
       },
       {
-        "slotStart": "15:00:00",
+        "slotStart": "15:30:00",
         "rooms": [
           {
             "id": 56320,
@@ -1699,8 +1699,8 @@
               "id": "812622",
               "title": "Charming wild snakes with pyproject.nix & uv2nix",
               "description": "Pip, Conda, Poetry, and now, the Rust-based Uv. Python is a complex ecosystem fraught with pitfalls, fragmentation & historic legacy.\r\nNix provides a unifying way to deal with complex software environments. However, language integration tooling for Python has been lacking.\r\n\r\nIn this talk we'll explore pyproject.nix & uv2nix to wrangle everything from simple projects using requirements.txt & pyproject.toml to complex applications and monorepos.\r\n",
-              "startsAt": "2025-03-06T15:00:00",
-              "endsAt": "2025-03-06T15:30:00",
+              "startsAt": "2025-03-06T15:30:00",
+              "endsAt": "2025-03-06T16:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1760,9 +1760,9 @@
             "session": {
               "id": "781777",
               "title": "Mastering NixOS Integration Tests: Advanced Techniques for Fast and Robust Multi-VM Tests",
-              "description": "Join this hands-on workshop to explore the powerful NixOS Integration Test Driver! In just two hours, learn to simulate complex networked environments with multiple hosts and virtual networks, use the interactive mode for debugging, and apply best practices to avoid flaky tests. Perfect for enhancing your NixOS testing skills and streamlining CI/CD pipelines. Don't miss this chance to boost your expertise with reliable, real-world testing techniques!",
-              "startsAt": "2025-03-06T15:00:00",
-              "endsAt": "2025-03-06T16:30:00",
+              "description": "Join this hands-on workshop to explore the powerful NixOS Integration Test Driver! In just two hours, learn to simulate complex networked environments with multiple hosts and virtual networks, use the interactive mode for debugging, and apply best practices to avoid flaky tests. Perfect for enhancing your NixOS testing skills and streamlining CI/CD pipelines. Don’t miss this chance to boost your expertise with reliable, real-world testing techniques!",
+              "startsAt": "2025-03-06T15:30:00",
+              "endsAt": "2025-03-06T17:00:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1827,7 +1827,7 @@
         ]
       },
       {
-        "slotStart": "15:30:00",
+        "slotStart": "16:00:00",
         "rooms": [
           {
             "id": 56320,
@@ -1836,8 +1836,8 @@
               "id": "785474",
               "title": "Nix is faster than no evaluation",
               "description": "Evaluating packages with big dependency trees with nix is time consuming.\r\nCurrently, while there is a local eval cache, evaluation costs are sum up locally but also globally as eval caches are generally not shared across machine or user boundaries.\r\nIn other places such as searching packages, evaluation is impossible, prohibitively expensive, or just annoying.\r\nIn this talk I want to introduce different approaches to avoid evaluations, how they are motivated and what their limits are.",
-              "startsAt": "2025-03-06T15:30:00",
-              "endsAt": "2025-03-06T16:00:00",
+              "startsAt": "2025-03-06T16:00:00",
+              "endsAt": "2025-03-06T16:30:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1889,7 +1889,7 @@
         ]
       },
       {
-        "slotStart": "16:00:00",
+        "slotStart": "16:30:00",
         "rooms": [
           {
             "id": 56320,
@@ -1898,8 +1898,8 @@
               "id": "da6c7180-bf2b-49be-9fdd-2084dd6f8897",
               "title": "Break",
               "description": null,
-              "startsAt": "2025-03-06T16:00:00",
-              "endsAt": "2025-03-06T16:30:00",
+              "startsAt": "2025-03-06T16:30:00",
+              "endsAt": "2025-03-06T17:00:00",
               "isServiceSession": true,
               "isPlenumSession": false,
               "speakers": [],
@@ -1917,7 +1917,7 @@
         ]
       },
       {
-        "slotStart": "16:30:00",
+        "slotStart": "17:00:00",
         "rooms": [
           {
             "id": 56320,
@@ -1926,8 +1926,8 @@
               "id": "f3d0ef08-efcd-43dc-b146-24068078cbe0",
               "title": "Lightning Talks",
               "description": null,
-              "startsAt": "2025-03-06T16:30:00",
-              "endsAt": "2025-03-06T17:30:00",
+              "startsAt": "2025-03-06T17:00:00",
+              "endsAt": "2025-03-06T18:00:00",
               "isServiceSession": true,
               "isPlenumSession": false,
               "speakers": [],
@@ -2096,7 +2096,7 @@
           {
             "id": "792517",
             "title": "Building a Chromebook replacement with NixOS",
-            "description": "As Linux users, we often install Linux for friends and family, but many struggle with updates, packaging quirks, and system maintenance—leaving you to fix issues and them frustrated.\r\n\r\nInstead of simply suggesting they get a Chromebook, what if we could create a similar experience with NixOS? My Nixbook project delivers automatic updates, easy Flatpak app installs, and sane defaults for everyday users.\r\n\r\nIn this talk, I'll share how I built it and made it work flawlessly.\r\n",
+            "description": "As Linux users, we often install Linux for friends and family, but many struggle with updates, packaging quirks, and system maintenance—leaving you to fix issues and them frustrated.\r\n\r\nInstead of simply suggesting they get a Chromebook, what if we could create a similar experience with NixOS? My Nixbook project delivers automatic updates, easy Flatpak app installs, and sane defaults for everyday users.\r\n\r\nIn this talk, I’ll share how I built it and made it work flawlessly.\r\n",
             "startsAt": "2025-03-07T10:30:00",
             "endsAt": "2025-03-07T11:00:00",
             "isServiceSession": false,
@@ -2148,7 +2148,7 @@
           {
             "id": "818323",
             "title": "A Sustainable Nix, State of the Union",
-            "description": "Lets explore how to ensure the sustainability of the Nix ecosystem with community leads including the SC and Foundation. We will dive into what it takes to create and maintain a robust, reliable environment for years to come. Covering the community's milestones in 2024, from infra to governance, and about both the hard-won lessons and the innovations shaping Nix's future.",
+            "description": "Lets explore how to ensure the sustainability of the Nix ecosystem with community leads including the SC and Foundation. We will dive into what it takes to create and maintain a robust, reliable environment for years to come. Covering the community’s milestones in 2024, from infra to governance, and about both the hard-won lessons and the innovations shaping Nix’s future.",
             "startsAt": "2025-03-07T11:00:00",
             "endsAt": "2025-03-07T11:30:00",
             "isServiceSession": false,
@@ -2275,7 +2275,7 @@
           {
             "id": "828375",
             "title": "Tvix store in production",
-            "description": "Replit.com is website used by millions of users to collaboratively create software with their teammates and now with Replit's AI Agent. Replit uses Nix to manage the underlying development environments. When building a Nix environment, downloading files from cache.nixos.org can take a long time, and many files would be duplicated across Repls.\r\nIn this talk, I will show how Replit uses Nix local-overlay-stores to manage Nix caching, as well as our new cache disk architecture using tvix-store.",
+            "description": "Replit.com is website used by millions of users to collaboratively create software with their teammates and now with Replit’s AI Agent. Replit uses Nix to manage the underlying development environments. When building a Nix environment, downloading files from cache.nixos.org can take a long time, and many files would be duplicated across Repls.\r\nIn this talk, I will show how Replit uses Nix local-overlay-stores to manage Nix caching, as well as our new cache disk architecture using tvix-store.",
             "startsAt": "2025-03-07T13:30:00",
             "endsAt": "2025-03-07T14:00:00",
             "isServiceSession": false,
@@ -2848,7 +2848,7 @@
             "session": {
               "id": "792517",
               "title": "Building a Chromebook replacement with NixOS",
-              "description": "As Linux users, we often install Linux for friends and family, but many struggle with updates, packaging quirks, and system maintenance—leaving you to fix issues and them frustrated.\r\n\r\nInstead of simply suggesting they get a Chromebook, what if we could create a similar experience with NixOS? My Nixbook project delivers automatic updates, easy Flatpak app installs, and sane defaults for everyday users.\r\n\r\nIn this talk, I'll share how I built it and made it work flawlessly.\r\n",
+              "description": "As Linux users, we often install Linux for friends and family, but many struggle with updates, packaging quirks, and system maintenance—leaving you to fix issues and them frustrated.\r\n\r\nInstead of simply suggesting they get a Chromebook, what if we could create a similar experience with NixOS? My Nixbook project delivers automatic updates, easy Flatpak app installs, and sane defaults for everyday users.\r\n\r\nIn this talk, I’ll share how I built it and made it work flawlessly.\r\n",
               "startsAt": "2025-03-07T10:30:00",
               "endsAt": "2025-03-07T11:00:00",
               "isServiceSession": false,
@@ -2910,7 +2910,7 @@
             "session": {
               "id": "818323",
               "title": "A Sustainable Nix, State of the Union",
-              "description": "Lets explore how to ensure the sustainability of the Nix ecosystem with community leads including the SC and Foundation. We will dive into what it takes to create and maintain a robust, reliable environment for years to come. Covering the community's milestones in 2024, from infra to governance, and about both the hard-won lessons and the innovations shaping Nix's future.",
+              "description": "Lets explore how to ensure the sustainability of the Nix ecosystem with community leads including the SC and Foundation. We will dive into what it takes to create and maintain a robust, reliable environment for years to come. Covering the community’s milestones in 2024, from infra to governance, and about both the hard-won lessons and the innovations shaping Nix’s future.",
               "startsAt": "2025-03-07T11:00:00",
               "endsAt": "2025-03-07T11:30:00",
               "isServiceSession": false,
@@ -3147,7 +3147,7 @@
             "session": {
               "id": "828375",
               "title": "Tvix store in production",
-              "description": "Replit.com is website used by millions of users to collaboratively create software with their teammates and now with Replit's AI Agent. Replit uses Nix to manage the underlying development environments. When building a Nix environment, downloading files from cache.nixos.org can take a long time, and many files would be duplicated across Repls.\r\nIn this talk, I will show how Replit uses Nix local-overlay-stores to manage Nix caching, as well as our new cache disk architecture using tvix-store.",
+              "description": "Replit.com is website used by millions of users to collaboratively create software with their teammates and now with Replit’s AI Agent. Replit uses Nix to manage the underlying development environments. When building a Nix environment, downloading files from cache.nixos.org can take a long time, and many files would be duplicated across Repls.\r\nIn this talk, I will show how Replit uses Nix local-overlay-stores to manage Nix caching, as well as our new cache disk architecture using tvix-store.",
               "startsAt": "2025-03-07T13:30:00",
               "endsAt": "2025-03-07T14:00:00",
               "isServiceSession": false,
