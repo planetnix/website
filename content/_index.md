@@ -22,7 +22,7 @@ End of transmission.
 ## **Location**
 
 **When:**  
-March 6th-7th, 2025
+March 5th-6th, 2026
 
 **Where:**  
 Pasadena Convention Center  
@@ -40,7 +40,7 @@ There is an additional option to purchase a Planet Nix swag bag, but this is not
 
 ### Do I need to prepare anything?
 
-As you prepare for the event we’d like to encourage all attendees to download any important repositories to their local machines and prepare their API-Keys beforehand as we will get rate limited by some organizations.
+As you prepare for the event we'd like to encourage all attendees to download any important repositories to their local machines and prepare their API-Keys beforehand as we will get rate limited by some organizations.
 
 The Nix manual shows how to configure nix to use with [access-tokens](https://nix.dev/manual/nix/2.24/command-ref/conf-file.html#conf-access-tokens).
 
