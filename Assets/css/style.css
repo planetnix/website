@@ -397,3 +397,13 @@ footer {
     border-top: 1px solid #FFF;
     padding: 0.5em;
 }
+
+.footer-content a {
+    color: #ffd02b;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    border-bottom: 1px solid #ffd02b;
+
+}
