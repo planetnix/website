@@ -200,6 +200,7 @@ body > .container > .content {
 
 .cfp-callout {
     line-height: 4em;
+    color: #FFFFFF;
 }
 
 @media (max-width: 576px) {
