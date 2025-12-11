@@ -2,15 +2,17 @@ version = 1
 
 [install]
 livereload.pkg-path = "python313Packages.livereload"
-nodejs.pkg-path = "nodejs"
 
 [hook]
 on-activate = """
-# TODO: print how to start livereload
+echo ""
+echo "To start the livereload server, run the following command:"
+echo "    $ livereload --port 8888"
+echo ""
 """
 
 [services]
 livereload.command = """
-livereload
+livereload --port 8888
 """
 
