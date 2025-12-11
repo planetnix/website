@@ -131,6 +131,7 @@
 :host {
     --pico-font-family-sans-serif: "Geist", sans-serif;
     --pico-font-family-monospace: "geist mono", monospace;
+    --pico-color: #FFFFFF;
 }
 
 
