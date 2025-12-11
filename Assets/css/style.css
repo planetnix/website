@@ -49,6 +49,12 @@ body > .container > .content {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 60px;
+  }
+}
+
 /* CFP Section */
 .cfp-section {
     display: flex;
@@ -117,6 +123,11 @@ body > .container > .content {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .hero-logo > img {
+        padding: 0 7%;
+    }
+}
 .hero-content {
     position: absolute;
     bottom: 0;
@@ -128,6 +139,13 @@ body > .container > .content {
     justify-content: end;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 0 7%;
+    }
 }
 
 .hero-tagline {
@@ -233,6 +251,15 @@ body > .container > .content {
     position: relative;
     z-index: 10;
 }
+
+@media (max-width: 768px) {
+    .about-content {
+      margin: 2em 7% 0 7%;
+      flex-direction: column;
+      gap: 0;
+    }
+}
+
 .about-content > * {
     display: flex;
     flex-direction: column;
@@ -255,14 +282,26 @@ body > .container > .content {
     grid-template-rows: auto;
 }
 
+@media (max-width: 768px) {
+    .about-grid {
+        margin: 0 7%;
+    }
+}
+
 .about-grid > div {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     padding: 0 3em;
     margin-top: 1em;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-grid > div {
+        padding: 0;
+    }
 }
 
 .about-grid > div:last-child {
@@ -380,6 +419,12 @@ body > .container > .content {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .faq-section {
+        margin: 2em 7% 0 7%;
+    }
+}
+
 .faq-content {
     position: relative;
 }
@@ -416,6 +461,15 @@ footer {
     margin: 0 10%;
     border-top: 1px solid #FFF;
     padding: 0.5em;
+    line-height: 1.8em;
+}
+
+@media (max-width: 768px) {
+    .footer-content  {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -2em;
+    }
 }
 
 .footer-content a {
