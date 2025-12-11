@@ -36,8 +36,11 @@
 #   - Stop server when done
 #
 # Image Optimization:
-#   just optimize-images     - Optimize all PNG images in assets/images/
-#                              Uses pngquant (65-80% quality) + optipng
+#   just optimize-images              - Optimize all PNG images in assets/images/
+#                                       Uses pngquant (65-80% quality) + optipng
+#   just generate-responsive-images   - Generate 480w, 768w, 1024w versions of
+#                                       background images for responsive loading
+#                                       Creates WebP versions optimized for mobile
 #
 # Utilities:
 #   just info                - Show Flox environment information
@@ -166,6 +169,40 @@ optimize-images:
         fi; \
     done
     @echo "✅ Image optimization complete"
+
+# Generate responsive image sizes for background images
+# Creates 480w, 768w, and 1024w versions of specified images for responsive loading
+# Original 1280w images are preserved
+generate-responsive-images:
+    @echo "🖼️  Generating responsive image sizes..."
+    @cd assets/images && \
+    for img in location-bg about-bg; do \
+        echo "  Processing $${img}..."; \
+        if [ -f "$${img}.png" ]; then \
+            echo "    Creating 480w version..."; \
+            sips -z 320 480 "$${img}.png" --out "$${img}-480w.png" > /dev/null 2>&1; \
+            echo "    Creating 768w version..."; \
+            sips -z 512 768 "$${img}.png" --out "$${img}-768w.png" > /dev/null 2>&1; \
+            echo "    Creating 1024w version..."; \
+            sips -z 682 1024 "$${img}.png" --out "$${img}-1024w.png" > /dev/null 2>&1; \
+        else \
+            echo "    ⚠️  $${img}.png not found, skipping"; \
+        fi; \
+    done && \
+    echo "  Optimizing resized PNGs..." && \
+    just optimize-images > /dev/null && \
+    echo "  Converting to WebP..." && \
+    for img in location-bg about-bg; do \
+        for size in 480 768 1024; do \
+            if [ -f "$${img}-$${size}w.png" ]; then \
+                flox activate -- cwebp -q 90 "$${img}-$${size}w.png" -o "$${img}-$${size}w.webp" 2>&1 | grep -E "(Saving|Output)" || true; \
+            fi; \
+        done; \
+    done
+    @echo "✅ Responsive images generated"
+    @echo ""
+    @echo "📊 File sizes created:"
+    @cd assets/images && ls -lh *-{480,768,1024}w.webp 2>/dev/null || echo "No responsive images found"
 
 # Show current environment info
 info:
