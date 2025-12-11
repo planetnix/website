@@ -1,0 +1,277 @@
+name: Lighthouse Performance Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'index.html'
+      - 'assets/**'
+      - '.github/workflows/lighthouse-pr.yml'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Install Flox
+        uses: flox/install-flox-action@v1
+
+      - name: Activate Flox environment
+        run: flox activate
+
+      # Test BASE branch first
+      - name: Checkout base branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.base_ref }}
+
+      - name: Start dev server for base branch
+        run: |
+          flox activate -- livereload --port 8888 > /dev/null 2>&1 &
+          echo $! > .server.pid
+          sleep 5
+          curl -s http://localhost:8888 > /dev/null
+
+      - name: Run Lighthouse on base branch
+        run: |
+          flox activate -- npx lighthouse http://localhost:8888 \
+            --only-categories=performance,accessibility,best-practices,seo \
+            --output json \
+            --output-path ./lighthouse-base.json \
+            --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
+
+      - name: Stop dev server
+        run: |
+          if [ -f .server.pid ]; then
+            kill $(cat .server.pid) 2>/dev/null || true
+            rm .server.pid
+          fi
+
+      # Test PR branch
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Start dev server for PR branch
+        run: |
+          flox activate -- livereload --port 8888 > /dev/null 2>&1 &
+          echo $! > .server.pid
+          sleep 5
+          curl -s http://localhost:8888 > /dev/null
+
+      - name: Run Lighthouse on PR branch
+        run: |
+          flox activate -- npx lighthouse http://localhost:8888 \
+            --only-categories=performance,accessibility,best-practices,seo \
+            --output json \
+            --output-path ./lighthouse-pr.json \
+            --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
+
+      - name: Stop dev server
+        if: always()
+        run: |
+          if [ -f .server.pid ]; then
+            kill $(cat .server.pid) 2>/dev/null || true
+            rm .server.pid
+          fi
+
+      - name: Parse Lighthouse scores
+        id: lighthouse-scores
+        run: |
+          # Parse BASE branch scores
+          BASE_PERF=$(flox activate -- node -e "const data = require('./lighthouse-base.json'); console.log(Math.round(data.categories.performance.score * 100));")
+          BASE_A11Y=$(flox activate -- node -e "const data = require('./lighthouse-base.json'); console.log(Math.round(data.categories.accessibility.score * 100));")
+          BASE_BEST=$(flox activate -- node -e "const data = require('./lighthouse-base.json'); console.log(Math.round(data.categories['best-practices'].score * 100));")
+          BASE_SEO=$(flox activate -- node -e "const data = require('./lighthouse-base.json'); console.log(Math.round(data.categories.seo.score * 100));")
+
+          # Parse PR branch scores
+          PR_PERF=$(flox activate -- node -e "const data = require('./lighthouse-pr.json'); console.log(Math.round(data.categories.performance.score * 100));")
+          PR_A11Y=$(flox activate -- node -e "const data = require('./lighthouse-pr.json'); console.log(Math.round(data.categories.accessibility.score * 100));")
+          PR_BEST=$(flox activate -- node -e "const data = require('./lighthouse-pr.json'); console.log(Math.round(data.categories['best-practices'].score * 100));")
+          PR_SEO=$(flox activate -- node -e "const data = require('./lighthouse-pr.json'); console.log(Math.round(data.categories.seo.score * 100));")
+
+          # Calculate deltas
+          PERF_DELTA=$((PR_PERF - BASE_PERF))
+          A11Y_DELTA=$((PR_A11Y - BASE_A11Y))
+          BEST_DELTA=$((PR_BEST - BASE_BEST))
+          SEO_DELTA=$((PR_SEO - BASE_SEO))
+
+          # Output base scores
+          echo "base-performance=$BASE_PERF" >> $GITHUB_OUTPUT
+          echo "base-accessibility=$BASE_A11Y" >> $GITHUB_OUTPUT
+          echo "base-best-practices=$BASE_BEST" >> $GITHUB_OUTPUT
+          echo "base-seo=$BASE_SEO" >> $GITHUB_OUTPUT
+
+          # Output PR scores
+          echo "pr-performance=$PR_PERF" >> $GITHUB_OUTPUT
+          echo "pr-accessibility=$PR_A11Y" >> $GITHUB_OUTPUT
+          echo "pr-best-practices=$PR_BEST" >> $GITHUB_OUTPUT
+          echo "pr-seo=$PR_SEO" >> $GITHUB_OUTPUT
+
+          # Output deltas
+          echo "delta-performance=$PERF_DELTA" >> $GITHUB_OUTPUT
+          echo "delta-accessibility=$A11Y_DELTA" >> $GITHUB_OUTPUT
+          echo "delta-best-practices=$BEST_DELTA" >> $GITHUB_OUTPUT
+          echo "delta-seo=$SEO_DELTA" >> $GITHUB_OUTPUT
+
+      - name: Generate score badges and delta formatting
+        id: badges
+        run: |
+          # Function to determine badge color
+          get_color() {
+            score=$1
+            if [ $score -ge 90 ]; then
+              echo "brightgreen"
+            elif [ $score -ge 50 ]; then
+              echo "orange"
+            else
+              echo "red"
+            fi
+          }
+
+          # Function to format delta
+          format_delta() {
+            delta=$1
+            if [ $delta -gt 0 ]; then
+              echo "🟢 +$delta"
+            elif [ $delta -lt 0 ]; then
+              echo "🔴 $delta"
+            else
+              echo "⚪ 0"
+            fi
+          }
+
+          PERF_COLOR=$(get_color ${{ steps.lighthouse-scores.outputs.pr-performance }})
+          A11Y_COLOR=$(get_color ${{ steps.lighthouse-scores.outputs.pr-accessibility }})
+          BEST_COLOR=$(get_color ${{ steps.lighthouse-scores.outputs.pr-best-practices }})
+          SEO_COLOR=$(get_color ${{ steps.lighthouse-scores.outputs.pr-seo }})
+
+          PERF_DELTA=$(format_delta ${{ steps.lighthouse-scores.outputs.delta-performance }})
+          A11Y_DELTA=$(format_delta ${{ steps.lighthouse-scores.outputs.delta-accessibility }})
+          BEST_DELTA=$(format_delta ${{ steps.lighthouse-scores.outputs.delta-best-practices }})
+          SEO_DELTA=$(format_delta ${{ steps.lighthouse-scores.outputs.delta-seo }})
+
+          echo "perf-color=$PERF_COLOR" >> $GITHUB_OUTPUT
+          echo "a11y-color=$A11Y_COLOR" >> $GITHUB_OUTPUT
+          echo "best-color=$BEST_COLOR" >> $GITHUB_OUTPUT
+          echo "seo-color=$SEO_COLOR" >> $GITHUB_OUTPUT
+
+          echo "perf-delta=$PERF_DELTA" >> $GITHUB_OUTPUT
+          echo "a11y-delta=$A11Y_DELTA" >> $GITHUB_OUTPUT
+          echo "best-delta=$BEST_DELTA" >> $GITHUB_OUTPUT
+          echo "seo-delta=$SEO_DELTA" >> $GITHUB_OUTPUT
+
+      - name: Comment PR with results
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const basePerfScore = ${{ steps.lighthouse-scores.outputs['base-performance'] }};
+            const baseA11yScore = ${{ steps.lighthouse-scores.outputs['base-accessibility'] }};
+            const baseBestScore = ${{ steps.lighthouse-scores.outputs['base-best-practices'] }};
+            const baseSeoScore = ${{ steps.lighthouse-scores.outputs['base-seo'] }};
+
+            const prPerfScore = ${{ steps.lighthouse-scores.outputs['pr-performance'] }};
+            const prA11yScore = ${{ steps.lighthouse-scores.outputs['pr-accessibility'] }};
+            const prBestScore = ${{ steps.lighthouse-scores.outputs['pr-best-practices'] }};
+            const prSeoScore = ${{ steps.lighthouse-scores.outputs['pr-seo'] }};
+
+            const perfColor = '${{ steps.badges.outputs.perf-color }}';
+            const a11yColor = '${{ steps.badges.outputs.a11y-color }}';
+            const bestColor = '${{ steps.badges.outputs.best-color }}';
+            const seoColor = '${{ steps.badges.outputs.seo-color }}';
+
+            const perfDelta = '${{ steps.badges.outputs.perf-delta }}';
+            const a11yDelta = '${{ steps.badges.outputs.a11y-delta }}';
+            const bestDelta = '${{ steps.badges.outputs.best-delta }}';
+            const seoDelta = '${{ steps.badges.outputs.seo-delta }}';
+
+            const perfDeltaNum = ${{ steps.lighthouse-scores.outputs['delta-performance'] }};
+
+            const comment = `## 🔍 Lighthouse Performance Report
+
+            Performance audit completed for commit ${context.sha.substring(0, 7)}
+
+            ### Scores Comparison
+
+            | Category | Base (${context.payload.pull_request.base.ref}) | This PR | Change |
+            |----------|-------|---------|--------|
+            | ⚡ Performance | ${basePerfScore}/100 | **${prPerfScore}/100** | ${perfDelta} |
+            | ♿ Accessibility | ${baseA11yScore}/100 | **${prA11yScore}/100** | ${a11yDelta} |
+            | ✅ Best Practices | ${baseBestScore}/100 | **${prBestScore}/100** | ${bestDelta} |
+            | 🔍 SEO | ${baseSeoScore}/100 | **${prSeoScore}/100** | ${seoDelta} |
+
+            ### Performance Impact
+
+            ${perfDeltaNum > 0 ? `🎉 Great job! Performance **improved** by ${perfDeltaNum} points!` :
+              perfDeltaNum < 0 ? `⚠️ Performance **decreased** by ${Math.abs(perfDeltaNum)} points. Consider reviewing the changes.` :
+              '⚪ Performance remains unchanged.'}
+
+            ${prPerfScore >= 90 ? '✨ Performance score is excellent!' : prPerfScore >= 50 ? '💡 Room for improvement in performance.' : '🚨 Performance needs attention.'}
+
+            ---
+
+            <details>
+            <summary>📊 Score Guide</summary>
+
+            - 🟢 **90-100**: Good
+            - 🟠 **50-89**: Needs improvement
+            - 🔴 **0-49**: Poor
+
+            **Change indicators:**
+            - 🟢 Positive change (improvement)
+            - 🔴 Negative change (regression)
+            - ⚪ No change
+
+            </details>
+
+            <details>
+            <summary>🚀 Current Optimizations</summary>
+
+            Optimizations in place:
+            - ✅ Image optimization (76.6% size reduction)
+            - ✅ Lazy loading for below-fold images
+            - ✅ Optimized fonts with font-display: swap
+            - ✅ Minified CSS and assets
+
+            </details>
+
+            ---
+            *🤖 Automated report generated by [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) comparing against \`${context.payload.pull_request.base.ref}\` branch*
+            `;
+
+            // Find existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            const botComment = comments.find(comment =>
+              comment.user.type === 'Bot' &&
+              comment.body.includes('🔍 Lighthouse Performance Report')
+            );
+
+            if (botComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment
+              });
+            }
