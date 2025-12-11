@@ -218,6 +218,7 @@ body > .container > .content {
 
 .about-content {
     font-size: 18px;
+    text-align: justify;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -243,7 +244,6 @@ body > .container > .content {
     position: relative;
     z-index: 10;
     margin: 0 19%;
-
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
@@ -370,9 +370,20 @@ body > .container > .content {
 .faq-section {
     margin: 2em 19% 0 19%;
     padding-top: 4em;
+    position: relative;
+    z-index: 10;
 }
+
 .faq-content {
     position: relative;
+}
+
+.faq-content a {
+    color: #ffd02b;
+    text-decoration: none;
+}
+.faq-content a:hover {
+    border-bottom: 1px solid #ffd02b;
 }
 
 /* Footer */
