@@ -317,6 +317,35 @@ body > .container > .content {
     margin-top: 1em;
 }
 
+.about-content2 {
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2em 19% 0 19%;
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+      margin: 2em 7% 0 7%;
+    }
+}
+
+.about-content > * {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.about-content a {
+    display: contents;
+    color: #ffd02b;
+    text-decoration: none;
+}
 
 /* Location Section */
 .location-section {
