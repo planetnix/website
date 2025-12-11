@@ -150,6 +150,7 @@ body > .container {
 
 body > .container > .content {
     background-color: #1B1B1B;
+    color: #FFFFFF;
     min-height: 300px;
     position: relative;
 }
