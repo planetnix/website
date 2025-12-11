@@ -3,6 +3,9 @@
   "manifest": {
     "version": 1,
     "install": {
+      "clean-css-cli": {
+        "pkg-path": "clean-css-cli"
+      },
       "google-lighthouse": {
         "pkg-path": "google-lighthouse",
         "systems": [
@@ -43,6 +46,122 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "clean-css-cli",
+      "broken": false,
+      "derivation": "/nix/store/bk47cvvjbr1fh5mn2pqdyqij68rg4nb5-clean-css-cli-5.6.3.drv",
+      "description": "Command-line interface to the clean-css CSS optimization library",
+      "install_id": "clean-css-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "clean-css-cli-5.6.3",
+      "pname": "clean-css-cli",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:54:43.943535Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cbbjk2bq8kmnl4cz4dhr7rmpln8830kk-clean-css-cli-5.6.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "clean-css-cli",
+      "broken": false,
+      "derivation": "/nix/store/5i210wgrnfylqa2pj3qkk93al46q5f6m-clean-css-cli-5.6.3.drv",
+      "description": "Command-line interface to the clean-css CSS optimization library",
+      "install_id": "clean-css-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "clean-css-cli-5.6.3",
+      "pname": "clean-css-cli",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:03:54.422311Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wfjas5w0mpiysz8450d3y540i7yibg5i-clean-css-cli-5.6.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "clean-css-cli",
+      "broken": false,
+      "derivation": "/nix/store/jziwgc8l9kdg0iw3qb2p0ni23s9lgvwk-clean-css-cli-5.6.3.drv",
+      "description": "Command-line interface to the clean-css CSS optimization library",
+      "install_id": "clean-css-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "clean-css-cli-5.6.3",
+      "pname": "clean-css-cli",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:13:57.846055Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/z7cv3vxf0s0mxy2jyh5qkdf5inc8631f-clean-css-cli-5.6.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "clean-css-cli",
+      "broken": false,
+      "derivation": "/nix/store/j9sz6cjp87k9hw0blyrijw5har0kkaqj-clean-css-cli-5.6.3.drv",
+      "description": "Command-line interface to the clean-css CSS optimization library",
+      "install_id": "clean-css-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "clean-css-cli-5.6.3",
+      "pname": "clean-css-cli",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:23:17.704714Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.6.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/f1mzbqc66qsscjqq7h2qwihjyz60zm91-clean-css-cli-5.6.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "google-lighthouse",
       "broken": false,

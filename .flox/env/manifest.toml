@@ -10,6 +10,7 @@ just.pkg-path = "just"
 google-lighthouse.pkg-path = "google-lighthouse"
 google-lighthouse.systems = ["aarch64-linux", "x86_64-linux"]
 nodejs.pkg-path = "nodejs"
+clean-css-cli.pkg-path = "clean-css-cli"
 
 [hook]
 on-activate = """
