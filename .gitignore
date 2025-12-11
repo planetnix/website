@@ -4,13 +4,7 @@ result
 /TODO.md
 
 # Lighthouse reports
-lighthouse-report.html
-lighthouse-report.json
-lighthouse-report-full.html
-lighthouse-report-full.json
-lighthouse-mobile.html
-lighthouse-mobile.json
-lighthouse-perf.json
+/lighthouse-*
 
 # Just recipes temp files
 .server.pid
