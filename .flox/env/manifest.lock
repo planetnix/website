@@ -3,14 +3,27 @@
   "manifest": {
     "version": 1,
     "install": {
+      "google-lighthouse": {
+        "pkg-path": "google-lighthouse",
+        "systems": [
+          "aarch64-linux",
+          "x86_64-linux"
+        ]
+      },
       "imagemagick": {
         "pkg-path": "imagemagick"
+      },
+      "just": {
+        "pkg-path": "just"
       },
       "libwebp": {
         "pkg-path": "libwebp"
       },
       "livereload": {
         "pkg-path": "python313Packages.livereload"
+      },
+      "nodejs": {
+        "pkg-path": "nodejs"
       },
       "optipng": {
         "pkg-path": "optipng"
@@ -30,6 +43,64 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "google-lighthouse",
+      "broken": false,
+      "derivation": "/nix/store/khifp45mz1mishb73c9d10grdzd3zdmj-google-lighthouse-12.8.2.drv",
+      "description": "Automated auditing, performance metrics, and best practices for the web",
+      "install_id": "google-lighthouse",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "google-lighthouse-12.8.2",
+      "pname": "google-lighthouse",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:03:56.295086Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "12.8.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hxjrj69vnv80r74zc0h1fr9iwqhy5iv5-google-lighthouse-12.8.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "google-lighthouse",
+      "broken": false,
+      "derivation": "/nix/store/7z7d9f6b2yz7361dknym4swf495zzbmk-google-lighthouse-12.8.2.drv",
+      "description": "Automated auditing, performance metrics, and best practices for the web",
+      "install_id": "google-lighthouse",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "google-lighthouse-12.8.2",
+      "pname": "google-lighthouse",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:23:19.778607Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "12.8.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3i9wz41hp5w4cq4ms7y3c35sz9nxkzjd-google-lighthouse-12.8.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "imagemagick",
       "broken": false,
@@ -149,6 +220,134 @@
         "dev": "/nix/store/7dshaawa31ri8g7qffb3kbgy3jwqhkl2-imagemagick-7.1.2-8-dev",
         "doc": "/nix/store/lp3vnmaw0w0lnkmy1b15qa3ay7cr73fv-imagemagick-7.1.2-8-doc",
         "out": "/nix/store/xdckbi96kj51j8qxbj2m6bag3v83hn8q-imagemagick-7.1.2-8"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/xa4ji0rg0r5richc3jmbi5285vd7x8nf-just-1.43.1.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "just-1.43.1",
+      "pname": "just",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:54:58.699398Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/g2z02i3a2z17h9cmx04sp7zpzzgzkqh8-just-1.43.1-doc",
+        "man": "/nix/store/y8ggbr7rq06mpqsdckpdsxzhjkspw63g-just-1.43.1-man",
+        "out": "/nix/store/g6cidwix7lzzb0i5lpisvb7gx051qsc1-just-1.43.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/k4j49c343j0zasiamm81ylpkvihbyc4y-just-1.43.1.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "just-1.43.1",
+      "pname": "just",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:04:15.460660Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/99qn6axss3rk7c681rkhj9zza0ax2i74-just-1.43.1-doc",
+        "man": "/nix/store/59aflmjxv0qbkaqzmjni4yydg873dl5v-just-1.43.1-man",
+        "out": "/nix/store/ni4jn8rsn0h49lng7hdq6584zc4gpy9l-just-1.43.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/66w205j74zfnp4fmwi7rggs8hg1kxrlh-just-1.43.1.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "just-1.43.1",
+      "pname": "just",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:14:13.092487Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/kqx5lgjwpaipi7whnydwkl72alwvn5jz-just-1.43.1-doc",
+        "man": "/nix/store/j67aa2bj6ssz61x4bh0ga0z1qzzv3prp-just-1.43.1-man",
+        "out": "/nix/store/aa9459rdk1lzj2yd27csaasn9hb98ckr-just-1.43.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/7qy22sjsyx9jnh44lqvn2a0a2l62dbkr-just-1.43.1.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "just-1.43.1",
+      "pname": "just",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:23:39.278226Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/idyx9h5gmcnzzqbjb50nwf30i4g1050v-just-1.43.1-doc",
+        "man": "/nix/store/ib17hahpg1vpgh1ll0r7nb6rkmilpiil-just-1.43.1-man",
+        "out": "/nix/store/kkmg0vkp9y4jp9yqgzrml0fgac9lfcyq-just-1.43.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -385,6 +584,130 @@
       "outputs": {
         "dist": "/nix/store/9br7xjxzg7b90fqq3rs3hwg578c8plc8-python3.13-livereload-2.7.1-dist",
         "out": "/nix/store/09aw33m97k373ryp7bg88m7gnc4mzh7k-python3.13-livereload-2.7.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/x9g1nm5wwc7bycyw0q9k8fl03brz5yar-nodejs-22.21.1.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "nodejs-22.21.1",
+      "pname": "nodejs",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:55:05.864189Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.21.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/bkir3agnj2cvpx80a0z1lj50pg2dhddi-nodejs-22.21.1-dev",
+        "libv8": "/nix/store/ivbmw7d10pxzkrz5397bimhqwwlrc8gp-nodejs-22.21.1-libv8",
+        "out": "/nix/store/92igwjsd6av0pg8dvygirhdwahwq2sh7-nodejs-22.21.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/07m9qkb2rvy59x90w3hi9nykdxf409x8-nodejs-22.21.1.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "nodejs-22.21.1",
+      "pname": "nodejs",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:04:31.849814Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.21.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/1akvaqvrp0cf6pd7mkqy7m3gnzc3wfd7-nodejs-22.21.1-dev",
+        "libv8": "/nix/store/ykj9hi9qv7gwxnbg2vh6ca00w9zsbhm0-nodejs-22.21.1-libv8",
+        "out": "/nix/store/hps7k16bd9isj7pfsjzg7q0wgvrw47kn-nodejs-22.21.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/j1fpqmshmrxx52k2xqqrv5c718y6sjih-nodejs-22.21.1.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "nodejs-22.21.1",
+      "pname": "nodejs",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:14:20.707971Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.21.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/haa4773lz7wfhnql05181azh4z5141r7-nodejs-22.21.1-dev",
+        "libv8": "/nix/store/0pswqdxlx8y0v54gq0ixwps19agv6bds-nodejs-22.21.1-libv8",
+        "out": "/nix/store/wfjyiwara336j7r1v0ia3kib8779wzwf-nodejs-22.21.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs",
+      "broken": false,
+      "derivation": "/nix/store/wjimqspfnxjp5y11703a1rz75cbvj4ph-nodejs-22.21.1.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "nodejs-22.21.1",
+      "pname": "nodejs",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:23:57.507358Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "22.21.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/l1idqv7ff0m2kbcqnn1yr415wyga1wxf-nodejs-22.21.1-dev",
+        "libv8": "/nix/store/farc7vk89kr367hsx0qchmahf6i6sbk1-nodejs-22.21.1-libv8",
+        "out": "/nix/store/l85fis49agvp5q1ild1rfh4rrgmn92sr-nodejs-22.21.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

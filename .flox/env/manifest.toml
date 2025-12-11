@@ -6,6 +6,10 @@ imagemagick.pkg-path = "imagemagick"
 pngquant.pkg-path = "pngquant"
 optipng.pkg-path = "optipng"
 libwebp.pkg-path = "libwebp"
+just.pkg-path = "just"
+google-lighthouse.pkg-path = "google-lighthouse"
+google-lighthouse.systems = ["aarch64-linux", "x86_64-linux"]
+nodejs.pkg-path = "nodejs"
 
 [hook]
 on-activate = """
