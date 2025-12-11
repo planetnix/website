@@ -3,8 +3,20 @@
   "manifest": {
     "version": 1,
     "install": {
+      "imagemagick": {
+        "pkg-path": "imagemagick"
+      },
+      "libwebp": {
+        "pkg-path": "libwebp"
+      },
       "livereload": {
         "pkg-path": "python313Packages.livereload"
+      },
+      "optipng": {
+        "pkg-path": "optipng"
+      },
+      "pngquant": {
+        "pkg-path": "pngquant"
       }
     },
     "hook": {
@@ -18,6 +30,246 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/h5pj245w1lpgff141vjjiq9ckb6nlx4m-imagemagick-7.1.2-8.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "imagemagick-7.1.2-8",
+      "pname": "imagemagick",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:54:58.092226Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/0a3ysi0dx9iz1i5v0xj85zzc8yjavlrv-imagemagick-7.1.2-8-dev",
+        "doc": "/nix/store/1qna9ngsjxq8hy9chg8hqwsy1lg0f6bw-imagemagick-7.1.2-8-doc",
+        "out": "/nix/store/dzaplnfxc976z4dm94vb5c7kc8956nks-imagemagick-7.1.2-8"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/74ikbb0z6zqi17vv6qq0iy17kvd88wbj-imagemagick-7.1.2-8.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "imagemagick-7.1.2-8",
+      "pname": "imagemagick",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:04:14.372688Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/gwvsj5l3bpx6jbh5a3qnfk11s3awa8ll-imagemagick-7.1.2-8-dev",
+        "doc": "/nix/store/znvckz4a0dlfwzpdwbwgfffmidp1baig-imagemagick-7.1.2-8-doc",
+        "out": "/nix/store/7blk6gy4bmi3vrm7k6z0vkw1a2f1janp-imagemagick-7.1.2-8"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/imlwh8q0ka4h3ls4fwsrq13kb3ih3xr7-imagemagick-7.1.2-8.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "imagemagick-7.1.2-8",
+      "pname": "imagemagick",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:14:12.444546Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/58j6z4b5pg55xvq99pbgk9bd0i30xzcl-imagemagick-7.1.2-8-dev",
+        "doc": "/nix/store/aw9v3sdqm8023qq8z7nkf62b3w3jbi47-imagemagick-7.1.2-8-doc",
+        "out": "/nix/store/xj3hbbcfbr8dgviwg8yaw6bnw5asxbs3-imagemagick-7.1.2-8"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/7ss86p3m020zc69s7y0pp7pra0yprcpd-imagemagick-7.1.2-8.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "imagemagick-7.1.2-8",
+      "pname": "imagemagick",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:23:38.123590Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/7dshaawa31ri8g7qffb3kbgy3jwqhkl2-imagemagick-7.1.2-8-dev",
+        "doc": "/nix/store/lp3vnmaw0w0lnkmy1b15qa3ay7cr73fv-imagemagick-7.1.2-8-doc",
+        "out": "/nix/store/xdckbi96kj51j8qxbj2m6bag3v83hn8q-imagemagick-7.1.2-8"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "libwebp",
+      "broken": false,
+      "derivation": "/nix/store/c3icazdmv6jhycskgxwmijh30bvc5czk-libwebp-1.6.0.drv",
+      "description": "Tools and library for the WebP image format",
+      "install_id": "libwebp",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "libwebp-1.6.0",
+      "pname": "libwebp",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:55:00.636729Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.6.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/n6p9lh1gh645h9ac66iqmpcb0lb1j4mr-libwebp-1.6.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "libwebp",
+      "broken": false,
+      "derivation": "/nix/store/nmk7nvypdy26g0gkanff2mdr7gvk5g5b-libwebp-1.6.0.drv",
+      "description": "Tools and library for the WebP image format",
+      "install_id": "libwebp",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "libwebp-1.6.0",
+      "pname": "libwebp",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:04:19.454908Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.6.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/yj01rplw2k8ldgqdgjajm17yvr28004r-libwebp-1.6.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "libwebp",
+      "broken": false,
+      "derivation": "/nix/store/7cpbix5njr66rmzgxzkv98jjsknccb1r-libwebp-1.6.0.drv",
+      "description": "Tools and library for the WebP image format",
+      "install_id": "libwebp",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "libwebp-1.6.0",
+      "pname": "libwebp",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:14:15.135410Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.6.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/22cpx27kbcagc4bbgk4bf95faig8cc5k-libwebp-1.6.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "libwebp",
+      "broken": false,
+      "derivation": "/nix/store/krbshhzhds81hkmc687wfjcbrrprrhgx-libwebp-1.6.0.drv",
+      "description": "Tools and library for the WebP image format",
+      "install_id": "libwebp",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "libwebp-1.6.0",
+      "pname": "libwebp",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:23:43.333006Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.6.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bcv98jffnvqxvyncf1bayz50r9wj7g3q-libwebp-1.6.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "python313Packages.livereload",
       "broken": false,
@@ -133,6 +385,246 @@
       "outputs": {
         "dist": "/nix/store/9br7xjxzg7b90fqq3rs3hwg578c8plc8-python3.13-livereload-2.7.1-dist",
         "out": "/nix/store/09aw33m97k373ryp7bg88m7gnc4mzh7k-python3.13-livereload-2.7.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "optipng",
+      "broken": false,
+      "derivation": "/nix/store/vji77y2gsjhiwjas4m5r9xivgw2ms8f7-optipng-7.9.1.drv",
+      "description": "PNG optimizer",
+      "install_id": "optipng",
+      "license": "Zlib",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "optipng-7.9.1",
+      "pname": "optipng",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:55:08.681282Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/x1gn8cxwsx7633r1vby4jyfjjv0kx39a-optipng-7.9.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "optipng",
+      "broken": false,
+      "derivation": "/nix/store/qrwc6vj3ifds68wqw2dglggz6fh9da2g-optipng-7.9.1.drv",
+      "description": "PNG optimizer",
+      "install_id": "optipng",
+      "license": "Zlib",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "optipng-7.9.1",
+      "pname": "optipng",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:04:36.447106Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/88g6ldb2agsqpdl57xz6388mmhvmayv6-optipng-7.9.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "optipng",
+      "broken": false,
+      "derivation": "/nix/store/7zx73vwpzs4hg4qvq3p42wyyjinaqrc0-optipng-7.9.1.drv",
+      "description": "PNG optimizer",
+      "install_id": "optipng",
+      "license": "Zlib",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "optipng-7.9.1",
+      "pname": "optipng",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:14:23.777999Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ihzzz48mk6rk4a316aajzw80h0v95zpy-optipng-7.9.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "optipng",
+      "broken": false,
+      "derivation": "/nix/store/4piyvapxin1pqswbqx00964vpqvv15fm-optipng-7.9.1.drv",
+      "description": "PNG optimizer",
+      "install_id": "optipng",
+      "license": "Zlib",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "optipng-7.9.1",
+      "pname": "optipng",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:24:02.406936Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/g2b3is8swa9dy9jgpw8wmpnhm04yk23x-optipng-7.9.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "pngquant",
+      "broken": false,
+      "derivation": "/nix/store/w69g4z0g4snjha4jnsn5d3af6fnnd1vd-pngquant-3.0.3.drv",
+      "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
+      "install_id": "pngquant",
+      "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "pngquant-3.0.3",
+      "pname": "pngquant",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T02:55:19.779087Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/vbjvxmxnmixlpdr15m9597f2k2bp35jh-pngquant-3.0.3-man",
+        "out": "/nix/store/2c4n20nrnh6zl5xfmah128qbnciqlzfs-pngquant-3.0.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "pngquant",
+      "broken": false,
+      "derivation": "/nix/store/69fjrw4crds9vg7m2izny8qy82dsi1f4-pngquant-3.0.3.drv",
+      "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
+      "install_id": "pngquant",
+      "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "pngquant-3.0.3",
+      "pname": "pngquant",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:04:52.719059Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/p0b9f2c1pp0hvp1ljz95p83j8fyb8rc7-pngquant-3.0.3-man",
+        "out": "/nix/store/w4fpfg8vpic4sm6qripsmrwxslmdw2x6-pngquant-3.0.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "pngquant",
+      "broken": false,
+      "derivation": "/nix/store/vqf5jbq3ry1zrxk0sn9nl5jzjqkks5m8-pngquant-3.0.3.drv",
+      "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
+      "install_id": "pngquant",
+      "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "pngquant-3.0.3",
+      "pname": "pngquant",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:14:35.744126Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/z584l4zs8sbfywlqndvfk56bwld2xcpp-pngquant-3.0.3-man",
+        "out": "/nix/store/7m5syywabnps0z390lbh4aymm4jwvxkl-pngquant-3.0.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "pngquant",
+      "broken": false,
+      "derivation": "/nix/store/gin4iyr426iv9l99yv9z5r6p41m83aj2-pngquant-3.0.3.drv",
+      "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
+      "install_id": "pngquant",
+      "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "name": "pngquant-3.0.3",
+      "pname": "pngquant",
+      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "rev_count": 908783,
+      "rev_date": "2025-12-08T09:27:56Z",
+      "scrape_date": "2025-12-10T03:24:19.521665Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.0.3",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/zds20g9hrf58kr6xw5qsbf2i71j41k86-pngquant-3.0.3-man",
+        "out": "/nix/store/9a4ni47s5baw28918i9rl1krfwr0v056-pngquant-3.0.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

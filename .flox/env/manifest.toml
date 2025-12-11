@@ -2,6 +2,10 @@ version = 1
 
 [install]
 livereload.pkg-path = "python313Packages.livereload"
+imagemagick.pkg-path = "imagemagick"
+pngquant.pkg-path = "pngquant"
+optipng.pkg-path = "optipng"
+libwebp.pkg-path = "libwebp"
 
 [hook]
 on-activate = """
