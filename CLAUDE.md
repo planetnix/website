@@ -72,19 +72,30 @@ just dev
 ```
 
 ### Common Tasks
+
+**Important**: All `just` commands must be run within the Flox environment using `flox activate --`:
+
 ```bash
-just                   # List all available commands
-just dev              # Start development server
-just perf             # Quick performance check (84/100 current)
-just lighthouse       # Full performance audit with HTML report
-just lighthouse-mobile # Mobile performance test
-just optimize-images  # Re-optimize images
-just clean            # Remove generated reports
-just info             # Show environment info
+flox activate -- just                   # List all available commands
+flox activate -- just dev              # Start development server
+flox activate -- just perf             # Quick performance check (84/100 current)
+flox activate -- just lighthouse       # Full performance audit with HTML report
+flox activate -- just lighthouse-mobile # Mobile performance test
+flox activate -- just optimize-images  # Re-optimize images
+flox activate -- just clean            # Remove generated reports
+flox activate -- just info             # Show environment info
+```
+
+Alternatively, activate the Flox shell first, then run just commands directly:
+```bash
+flox activate
+# Now you can run just commands directly:
+just dev
+just perf
 ```
 
 ### Performance Testing
-- **Local**: Use `just perf` before committing
+- **Local**: Use `flox activate -- just perf` before committing
 - **CI/CD**: Automated Lighthouse tests on every PR
 - **Comparison**: CI compares PR performance vs base branch
 - **Reports**: Posted as PR comments with score deltas
