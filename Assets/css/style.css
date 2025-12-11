@@ -123,7 +123,7 @@ body > .container > .content {
     z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero-logo > img {
         padding: 0 7%;
     }
@@ -142,7 +142,7 @@ body > .container > .content {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero-content {
         padding: 0 7%;
     }
@@ -213,7 +213,7 @@ body > .container > .content {
     border-bottom: 1px solid #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navigation-section a {
         margin: 0 0.2em;
     }
@@ -252,7 +252,7 @@ body > .container > .content {
     z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .about-content {
       margin: 2em 7% 0 7%;
       flex-direction: column;
@@ -282,7 +282,7 @@ body > .container > .content {
     grid-template-rows: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .about-grid {
         margin: 0 7%;
     }
@@ -298,7 +298,7 @@ body > .container > .content {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .about-grid > div {
         padding: 0;
     }
@@ -419,7 +419,7 @@ body > .container > .content {
     z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .faq-section {
         margin: 2em 7% 0 7%;
     }
