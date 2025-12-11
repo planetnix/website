@@ -195,6 +195,12 @@ body > .container > .content {
     border-bottom: 1px solid #000;
 }
 
+@media (max-width: 768px) {
+    .navigation-section a {
+        margin: 0 0.2em;
+    }
+}
+
 .navigation-section a:hover {
   border-bottom: 1px solid #FFF;
   border-radius: 0;
