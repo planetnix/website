@@ -47,6 +47,14 @@ All extra resources needed for the website should be placed in the `assets/` fol
 2. Start the live reload server
 3. Edit `index.html` - changes reload automatically in the browser
 
+## Git Workflow
+
+### Commit Guidelines
+- **No Claude attribution**: Do not include any Claude-related attribution in commit messages or pull requests
+  - No "🤖 Generated with Claude Code" footer
+  - No "Co-Authored-By: Claude" lines
+  - Keep commit messages clean and professional
+
 ## Design Philosophy
 
 - **No build process**: Direct HTML and CSS for maximum simplicity
