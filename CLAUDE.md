@@ -55,6 +55,11 @@ All extra resources needed for the website should be placed in the `assets/` fol
   - No "Co-Authored-By: Claude" lines
   - Keep commit messages clean and professional
 
+### Pull Request Guidelines
+- **No test plans**: Do not include test plans or testing checklists in PR descriptions
+  - Keep PR descriptions concise and focused on the changes made
+  - Describe what was changed and why, not how to test it
+
 ## Design Philosophy
 
 - **No build process**: Direct HTML and CSS for maximum simplicity
