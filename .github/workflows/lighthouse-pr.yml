@@ -54,9 +54,19 @@ jobs:
             rm .server.pid
           fi
 
+      - name: Save base branch Lighthouse report
+        run: |
+          # Move the base report to /tmp so it persists across checkouts
+          mv lighthouse-base.json /tmp/lighthouse-base.json
+
       # Test PR branch
       - name: Checkout PR branch
         uses: actions/checkout@v4
+
+      - name: Restore base branch Lighthouse report
+        run: |
+          # Move the base report back to the working directory
+          mv /tmp/lighthouse-base.json lighthouse-base.json
 
       - name: Start dev server for PR branch
         run: |
