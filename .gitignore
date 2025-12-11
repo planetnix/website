@@ -1,3 +1,4 @@
-public 
 result
 .DS_Store
+/.playwright-mcp/
+/TODO.md

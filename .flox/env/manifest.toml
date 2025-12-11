@@ -1,13 +1,16 @@
 version = 1
 
 [install]
-zola.pkg-path = "zola"
+livereload.pkg-path = "python313Packages.livereload"
+nodejs.pkg-path = "nodejs"
 
 [hook]
-on-activate = "zola build"
+on-activate = """
+# TODO: print how to start livereload
+"""
 
 [services]
-zola.command = "zola serve"
+livereload.command = """
+livereload
+"""
 
-[options]
-systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
