@@ -17,13 +17,25 @@
   <link rel="stylesheet" href="assets/css/pico.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y156HXV0J7"></script>
+  <!-- Google Analytics - Deferred loading for better performance -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Y156HXV0J7');
+    // Defer Google Analytics loading until page is fully loaded
+    window.addEventListener('load', function() {
+      // Small delay to ensure page is fully interactive
+      setTimeout(function() {
+        // Load gtag.js script
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y156HXV0J7';
+        document.head.appendChild(script);
+
+        // Initialize Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y156HXV0J7');
+      }, 1000); // 1 second delay after page load
+    });
   </script>
 </head>
 <body data-theme="dark">
