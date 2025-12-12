@@ -170,24 +170,6 @@ body > .container > .content {
     flex-direction: column;
 }
 
-.hero-logo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero-logo > img {
-    z-index: 10;
-}
-
-@media (max-width: 1024px) {
-    .hero-logo > img {
-        padding: 0 7%;
-    }
-}
 .hero-content {
     position: absolute;
     bottom: 0;
@@ -208,9 +190,28 @@ body > .container > .content {
     }
 }
 
+.hero-logo {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-logo > img {
+    z-index: 10;
+}
+
 .hero-tagline {
     color: #ffffff;
     font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero-tagline {
+    font-size: 27px;
+  }
 }
 
 .hero-date {
@@ -609,10 +610,10 @@ footer {
           <img src="assets/images/hero-moon.png" alt="Moon" fetchpriority="high" width="1024" height="467">
         </picture>
       </div>
-      <div class="hero-logo">
-        <img src="assets/images/planetnix-logo.svg" alt="PlanetNix Logo" width="796" height="143">
-      </div>
       <div class="hero-content">
+        <div class="hero-logo">
+          <img src="assets/images/planetnix-logo.svg" alt="PlanetNix Logo" width="796" height="143">
+        </div>
         <h1 class="hero-tagline">Where Nix Builders Come Together</h1>
         <div class="hero-date">March 5th-6th, 2026 @ Pasadena, CA</div>
       </div>
