@@ -598,15 +598,33 @@ body > .container > .content {
     color: #FFFFFF;
 }
 
+.faq-content details p,
 .faq-content details div {
     color: #ADADAD;
-    font-size: 0.8em;
+    font-size: 16px;
+}
+
+.faq-content blockquote {
+    border-left: 1px solid #ADADAD;
+    margin-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.faq-content blockquote p {
+    color: #ADADAD;
+}
+.faq-content blockquote h4 {
+    color: #ADADAD;
+    font-size: 1.3em;
+    font-weight: normal;
 }
 
 /* Footer */
 footer {
     font-size: 16px;
-    height: 200px;
+    font-family: var(--pico-font-family-monospace);
+    min-height: 250px;
     margin-top: 5em;
     padding-top: 120px;
     position: relative;
@@ -618,6 +636,23 @@ footer {
         rgba(0, 0, 0, 0.4) 80%,
         rgba(0, 0, 0, 0) 100%
     );
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: -6em;
+    }
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10%;
+    border-top: 1px solid #FFF;
+    padding: 1em;
+    line-height: 1.8em;
+    gap: 3em;
 }
 
 .footer-content  {
@@ -634,7 +669,6 @@ footer {
     .footer-content  {
         flex-direction: column;
         align-items: center;
-        margin-top: -2em;
     }
 }
 
@@ -923,47 +957,64 @@ footer {
               How do I get to Planet Nix?
             </summary>
             <div>
-              The best information can be found on the <a
-                href="https://www.visitpasadena.com/convention-center/attendees/directions-parking/">Visit
-              Pasadena</a> website.
-              <h4>By plane</h4>
               <p>
-                If you are coming from LAX, it is possible to reach the convention center via public transportation in approximately 90 minutes.
-                Head to Terminal B Lower Level and take the <a
-                  href="https://www.flylax.com/flyaway-bus">FlyAway Bus</a> to <a
-                  href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
-                Station</a>. Take the Metro A Line to Memorial Park Station or
-                Del Mar Station, both stations are 0.4 miles away from the
-                convention center and about a ten minute walk.
-              </p>
-              <h4>By car</h4>
-              <p>
-                There are a number of ways to get to the convention center by
-                car. See the <a
+                The best information can be found on the <a
                   href="https://www.visitpasadena.com/convention-center/attendees/directions-parking/">Visit
-                Pasadena</a> site for the most accurate information. There are
-                several parking structures around the convention center with a
-                daily flat rate of $15.
+                Pasadena</a> website.
               </p>
-              <h4>By metro</h4>
-              <p>
-                Head to your nearest metro stop and take the metro to <a
-                  href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
-                Station</a>. Take the Metro A Line to Memorial Park Station or
-                Del Mar Station, both stations are 0.4 miles away from the
-                convention center and about a ten minute walk.
-              </p>
+              <blockquote>
+                <h4>By plane</h4>
+                <p>
+                  If you are coming from LAX, it is possible to reach the convention center via public transportation in approximately 90 minutes.
+                  Head to Terminal B Lower Level and take the <a
+                    href="https://www.flylax.com/flyaway-bus">FlyAway Bus</a> to <a
+                    href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
+                  Station</a>. Take the Metro A Line to Memorial Park Station or
+                  Del Mar Station, both stations are 0.4 miles away from the
+                  convention center and about a ten minute walk.
+                </p>
+                <h4>By car</h4>
+                <p>
+                  There are a number of ways to get to the convention center by
+                  car. See the <a
+                    href="https://www.visitpasadena.com/convention-center/attendees/directions-parking/">Visit
+                  Pasadena</a> site for the most accurate information. There are
+                  several parking structures around the convention center with a
+                  daily flat rate of $15.
+                </p>
+                <h4>By metro</h4>
+                <p>
+                  Head to your nearest metro stop and take the metro to <a
+                    href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
+                  Station</a>. Take the Metro A Line to Memorial Park Station or
+                  Del Mar Station, both stations are 0.4 miles away from the
+                  convention center and about a ten minute walk.
+                </p>
+              </blockquote>
             </div>
           </details>
         </div>
       </section>
 
       <footer>
+        <div class="footer-socials">
+          <a href="https://x.com/planetnixconf">
+            <img src="assets/images/twitter.svg" alt="PlanetNix Twitter/X" width="24" height="24">
+          </a>
+          <a href="https://fosstodon.org/@planetnix@mastodon.social">
+            <img src="assets/images/mastodon.svg" alt="PlanetNix Mastodon" width="24" height="24">
+          </a>
+          <a href="https://bsky.app/profile/planetnix.bsky.social">
+            <img src="assets/images/bluesky.svg" alt="PlanetNix Bluesky" width="24" height="24">
+          </a>
+        </div>
         <div class="footer-content">
           <div>
-            PlanetNix:
+            © 2026 PlanetNix
+            (
             <a href="2025/">2025</a>,
             <a href="2024/">2024</a>
+            )
           </div>
           <div>Presented by <a href="https://flox.dev"><img src="assets/images/flox_logo.png" alt="Flox" width="72" height="36"></a></div>
           <div><a href="planetnix@flox.dev">planetnix@flox.dev</a></div>
