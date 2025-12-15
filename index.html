@@ -255,13 +255,69 @@ body > .container > .content {
 
 /* Navigation Section */
 .navigation-section {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 100;
     gap: 2em;
     height: 60px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.navigation-section::before {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 1px;
+    height: 70px;
+    content: "";
+    z-index: 100;
+    top: -6px;
+    left: 46px;
+}
+
+.navigation-section::after{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 1px;
+    height: 70px;
+    content: "";
+    z-index: 100;
+    top: -6px;
+    right: 46px;
+}
+
+@media (max-width: 576px) {
+    .navigation-section::before{
+        left: 0;
+    }
+    .navigation-section::after{
+        right: 0;
+    }
+}
+
+.navigation-section ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation-section li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #FFFFFF;
+    padding: 0;
+}
+
+.navigation-section li:last-child {
+    border-right: none;
 }
 
 .navigation-section a {
@@ -271,18 +327,18 @@ body > .container > .content {
     margin: 0 2em;
     padding: 0;
     font-size: 16px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
 }
 
 @media (max-width: 1024px) {
     .navigation-section a {
-        margin: 0 0.2em;
+        margin: 0 0.8em;
     }
 }
 
 .navigation-section a:hover {
-  border-bottom: 1px solid #FFF;
-  border-radius: 0;
+  color: #757575;
 }
 
 /* About Section */
