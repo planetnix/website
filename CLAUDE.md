@@ -88,6 +88,7 @@ flox activate -- just lighthouse                # Full performance audit with HT
 flox activate -- just lighthouse-mobile         # Mobile performance test
 flox activate -- just optimize-images           # Re-optimize source PNG images in-place
 flox activate -- just generate-responsive-images # Create responsive image sizes in generated/
+flox activate -- just generate-favicons         # Generate all favicon and app icons
 flox activate -- just regenerate-all-images     # Regenerate ALL images (WebP + responsive)
 flox activate -- just clean                     # Remove generated reports
 flox activate -- just info                      # Show environment info
@@ -136,6 +137,11 @@ just perf
 2. Optimize it: `flox activate -- just optimize-images`
 3. Regenerate all optimized versions: `flox activate -- just regenerate-all-images`
 4. Update index.html to reference the new image (use generated/ for WebP versions)
+
+### Updating Favicons
+1. Replace `assets/images/planetnix-logo-small.png` with your new logo
+2. Regenerate all favicons: `flox activate -- just generate-favicons`
+3. All favicon and app icons will be updated in `assets/images/generated/`
 
 ## Design Philosophy
 

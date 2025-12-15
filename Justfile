@@ -42,6 +42,9 @@
 #                                       background images for responsive loading
 #                                       Creates WebP versions optimized for mobile
 #                                       All generated files placed in assets/images/generated/
+#   just generate-favicons            - Generate all favicon and app icons from
+#                                       planetnix-logo-small.png (16x16, 32x32, 180x180,
+#                                       192x192, 512x512, favicon.ico)
 #   just regenerate-all-images        - Regenerate ALL optimized images from source
 #                                       Creates WebP versions of all PNGs + responsive sizes
 #
@@ -215,6 +218,34 @@ generate-responsive-images:
     @echo ""
     @echo "📊 File sizes created:"
     @cd assets/images/generated && ls -lh *-{480,768,1024}w.webp 2>/dev/null || echo "No responsive images found"
+
+# Generate all favicon and app icon sizes from planetnix-logo-small.png
+# Creates all required icon sizes in assets/images/generated/
+# Sizes: favicon.ico, 16x16, 32x32, apple-touch-icon (180x180), android-chrome (192x192, 512x512)
+generate-favicons:
+    @echo "🎨 Generating favicons and app icons from planetnix-logo-small.png..."
+    @mkdir -p assets/images/generated
+    @cd assets/images && \
+    if [ ! -f "planetnix-logo-small.png" ]; then \
+        echo "❌ Error: planetnix-logo-small.png not found in assets/images/"; \
+        exit 1; \
+    fi && \
+    echo "  Creating favicon-16x16.png..." && \
+    flox activate -- magick planetnix-logo-small.png -resize 16x16 generated/favicon-16x16.png && \
+    echo "  Creating favicon-32x32.png..." && \
+    flox activate -- magick planetnix-logo-small.png -resize 32x32 generated/favicon-32x32.png && \
+    echo "  Creating apple-touch-icon.png (180x180)..." && \
+    flox activate -- magick planetnix-logo-small.png -resize 180x180 generated/apple-touch-icon.png && \
+    echo "  Creating android-chrome-192x192.png..." && \
+    flox activate -- magick planetnix-logo-small.png -resize 192x192 generated/android-chrome-192x192.png && \
+    echo "  Creating android-chrome-512x512.png..." && \
+    flox activate -- magick planetnix-logo-small.png -resize 512x512 generated/android-chrome-512x512.png && \
+    echo "  Creating favicon.ico (multi-resolution)..." && \
+    flox activate -- magick planetnix-logo-small.png -resize 16x16 -resize 32x32 -resize 48x48 generated/favicon.ico
+    @echo "✅ All favicons and app icons generated"
+    @echo ""
+    @echo "📊 Generated files:"
+    @cd assets/images/generated && ls -lh favicon* apple-touch-icon.png android-chrome-*.png 2>/dev/null
 
 # Regenerate all optimized images from source images
 # This command:

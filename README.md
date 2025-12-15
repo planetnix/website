@@ -68,6 +68,7 @@ just perf                # Quick performance score check
 # Image Optimization
 just optimize-images              # Optimize all PNG images in place
 just generate-responsive-images   # Create responsive sizes (480w, 768w, 1024w)
+just generate-favicons            # Generate all favicon and app icons
 just regenerate-all-images        # Regenerate ALL optimized images from source
 
 # Utilities
