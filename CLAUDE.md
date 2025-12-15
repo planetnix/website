@@ -70,19 +70,28 @@ All extra resources needed for the website should be placed in the `assets/` fol
 # 1. Enter the development environment
 flox activate
 
-# 2. Start the development server
-just dev
+# 2. Start the development server (managed by Flox services)
+flox services start
 
 # 3. Edit index.html - changes reload automatically
+
+# 4. Stop the server when done
+flox services stop
 ```
 
 ### Common Tasks
 
-**Important**: All `just` commands must be run within the Flox environment using `flox activate --`:
+**Important**: Development server is managed by Flox services, not Just commands.
 
 ```bash
+# Development Server (Flox Services)
+flox activate                                   # Enter environment first
+flox services start                             # Start dev server (http://localhost:8888)
+flox services stop                              # Stop dev server
+flox services status                            # Check server status
+
+# Just Commands (run within Flox environment)
 flox activate -- just                           # List all available commands
-flox activate -- just dev                       # Start development server
 flox activate -- just perf                      # Quick performance check (91/100 current)
 flox activate -- just lighthouse                # Full performance audit with HTML report
 flox activate -- just lighthouse-mobile         # Mobile performance test
@@ -94,19 +103,22 @@ flox activate -- just clean                     # Remove generated reports
 flox activate -- just info                      # Show environment info
 ```
 
-Alternatively, activate the Flox shell first, then run just commands directly:
+Alternatively, activate the Flox shell first, then run commands directly:
 ```bash
 flox activate
-# Now you can run just commands directly:
-just dev
+# Now you can run commands directly:
+flox services start
 just perf
+just lighthouse
+flox services stop
 ```
 
 ### Performance Testing
-- **Local**: Use `flox activate -- just perf` before committing
+- **Local**: Start server with `flox services start`, then use `just perf` before committing
 - **CI/CD**: Automated Lighthouse tests on every PR
 - **Comparison**: CI compares PR performance vs base branch
 - **Reports**: Posted as PR comments with score deltas
+- **Note**: Lighthouse commands require the dev server to be running
 
 ## Git Workflow
 
