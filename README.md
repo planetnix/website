@@ -78,7 +78,7 @@ just generate-favicons            # Generate all favicon and app icons
 just regenerate-all-images        # Regenerate ALL optimized images from source
 
 # Utilities
-just info                # Show environment information
+just                     # Show environment info and available commands
 just clean               # Remove generated reports
 ```
 
