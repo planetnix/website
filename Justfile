@@ -44,7 +44,6 @@
 #                                       Creates WebP versions of all PNGs + responsive sizes
 #
 # Utilities:
-#   just info                - Show Flox environment information
 #   just clean               - Remove all generated Lighthouse reports
 #
 # Report Files (all gitignored):
@@ -54,7 +53,7 @@
 #   lighthouse-perf.json                 - Performance score only
 #
 # Example Workflow:
-#   flox activate            # Enter environment
+#   flox activate            # Enter environment (shows info + commands)
 #   flox services start      # Start dev server
 #   just lighthouse          # Run audit
 #   just lighthouse-mobile   # Test mobile
@@ -69,9 +68,17 @@
 #
 # ============================================================================
 
-# Default recipe - show available commands
+# Default recipe - show environment info and available commands
 @_default:
-    just --list --unsorted
+    @echo "📦 Environment Information:"
+    @echo ""
+    @flox list
+    @echo ""
+    @echo "🔗 Dev Server: http://localhost:8888"
+    @echo ""
+    @echo "📋 Available Commands:"
+    @echo ""
+    @just --list --unsorted
 
 # Run Lighthouse performance audit
 lighthouse:
@@ -245,11 +252,3 @@ regenerate-all-images:
     @echo ""
     @echo "📊 Generated files:"
     @cd assets/images/generated && ls -lh *.webp 2>/dev/null | head -20 || echo "No generated images found"
-
-# Show current environment info
-info:
-    @echo "📦 Environment Information:"
-    @echo ""
-    @flox list
-    @echo ""
-    @echo "🔗 Dev Server: http://localhost:8888"

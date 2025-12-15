@@ -100,12 +100,13 @@ flox activate -- just generate-responsive-images # Create responsive image sizes
 flox activate -- just generate-favicons         # Generate all favicon and app icons
 flox activate -- just regenerate-all-images     # Regenerate ALL images (WebP + responsive)
 flox activate -- just clean                     # Remove generated reports
-flox activate -- just info                      # Show environment info
 ```
 
 Alternatively, activate the Flox shell first, then run commands directly:
 ```bash
 flox activate
+# Shows environment info and available commands automatically
+
 # Now you can run commands directly:
 flox services start
 just perf
