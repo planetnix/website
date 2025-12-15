@@ -66,8 +66,9 @@ just lighthouse-mobile   # Test mobile performance
 just perf                # Quick performance score check
 
 # Image Optimization
-just optimize-images              # Optimize all PNG images
+just optimize-images              # Optimize all PNG images in place
 just generate-responsive-images   # Create responsive sizes (480w, 768w, 1024w)
+just regenerate-all-images        # Regenerate ALL optimized images from source
 
 # Utilities
 just clean               # Remove generated reports
@@ -82,7 +83,8 @@ planetnix-website/
 │   ├── css/
 │   │   └── pico.min.css   # Pico CSS framework
 │   ├── fonts/             # Local fonts (Geist 400/700, Geist Mono 400)
-│   ├── images/            # Optimized images and icons
+│   ├── images/            # Source images and icons
+│   │   └── generated/     # Generated images (WebP, responsive sizes)
 │   └── js/                # JavaScript (if needed)
 ├── Justfile               # Command runner recipes
 ├── .github/workflows/     # CI/CD automation
@@ -106,10 +108,13 @@ We take performance seriously. Here's what we've optimized:
 
 ### Optimizations Applied
 - **Images**: Optimized from 2.3 MB → 556 KB (76.6% reduction using pngquant + optipng)
+  - Source PNGs stored in `assets/images/`
+  - Generated WebP and responsive sizes in `assets/images/generated/`
+  - Regenerate all: `just regenerate-all-images`
 - **Responsive Images**: Multiple sizes (480w, 768w, 1024w, 1280w) for adaptive loading
   - **Why?** Saves 142 KB on mobile by serving appropriately sized images
   - Mobile devices load small versions (~15KB) instead of full-size (~100KB)
-  - Regenerate with: `just generate-responsive-images`
+  - Regenerate responsive sizes: `just generate-responsive-images`
 - **Initial Load**: Only 139 KB of images load initially (lazy loading for below-the-fold content)
 - **Explicit Image Dimensions**: All images have width/height to prevent layout shift
   - **Why?** CLS score of 0 (perfect!) - no content jumping during load

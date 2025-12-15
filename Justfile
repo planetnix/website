@@ -41,6 +41,9 @@
 #   just generate-responsive-images   - Generate 480w, 768w, 1024w versions of
 #                                       background images for responsive loading
 #                                       Creates WebP versions optimized for mobile
+#                                       All generated files placed in assets/images/generated/
+#   just regenerate-all-images        - Regenerate ALL optimized images from source
+#                                       Creates WebP versions of all PNGs + responsive sizes
 #
 # Utilities:
 #   just info                - Show Flox environment information
@@ -173,24 +176,33 @@ optimize-images:
 # Generate responsive image sizes for background images
 # Creates 480w, 768w, and 1024w versions of specified images for responsive loading
 # Original 1280w images are preserved
+# All generated files are placed in assets/images/generated/
 generate-responsive-images:
     @echo "🖼️  Generating responsive image sizes..."
+    @mkdir -p assets/images/generated
     @cd assets/images && \
     for img in location-bg about-bg; do \
         echo "  Processing $${img}..."; \
         if [ -f "$${img}.png" ]; then \
             echo "    Creating 480w version..."; \
-            sips -z 320 480 "$${img}.png" --out "$${img}-480w.png" > /dev/null 2>&1; \
+            sips -z 320 480 "$${img}.png" --out "generated/$${img}-480w.png" > /dev/null 2>&1; \
             echo "    Creating 768w version..."; \
-            sips -z 512 768 "$${img}.png" --out "$${img}-768w.png" > /dev/null 2>&1; \
+            sips -z 512 768 "$${img}.png" --out "generated/$${img}-768w.png" > /dev/null 2>&1; \
             echo "    Creating 1024w version..."; \
-            sips -z 682 1024 "$${img}.png" --out "$${img}-1024w.png" > /dev/null 2>&1; \
+            sips -z 682 1024 "$${img}.png" --out "generated/$${img}-1024w.png" > /dev/null 2>&1; \
         else \
             echo "    ⚠️  $${img}.png not found, skipping"; \
         fi; \
     done && \
     echo "  Optimizing resized PNGs..." && \
-    just optimize-images > /dev/null && \
+    cd generated && \
+    for png in *-{480,768,1024}w.png; do \
+        if [ -f "$$png" ]; then \
+            flox activate -- pngquant --quality=65-80 --speed 1 --force "$$png" -o "$${png%.png}-temp.png" && \
+            flox activate -- optipng -o2 "$${png%.png}-temp.png" && \
+            mv "$${png%.png}-temp.png" "$$png"; \
+        fi; \
+    done && \
     echo "  Converting to WebP..." && \
     for img in location-bg about-bg; do \
         for size in 480 768 1024; do \
@@ -202,7 +214,33 @@ generate-responsive-images:
     @echo "✅ Responsive images generated"
     @echo ""
     @echo "📊 File sizes created:"
-    @cd assets/images && ls -lh *-{480,768,1024}w.webp 2>/dev/null || echo "No responsive images found"
+    @cd assets/images/generated && ls -lh *-{480,768,1024}w.webp 2>/dev/null || echo "No responsive images found"
+
+# Regenerate all optimized images from source images
+# This command:
+# 1. Finds all PNG source images in assets/images/ (excluding generated/ folder)
+# 2. Creates WebP versions of all source PNGs in generated/
+# 3. Generates responsive sizes (480w, 768w, 1024w) for background images
+regenerate-all-images:
+    @echo "🖼️  Regenerating all optimized images..."
+    @mkdir -p assets/images/generated
+    @echo ""
+    @echo "📸 Converting source PNGs to WebP..."
+    @cd assets/images && \
+    for img in *.png; do \
+        if [ -f "$$img" ] && [ "$$img" != "generated" ]; then \
+            echo "  Converting $$img to WebP..."; \
+            flox activate -- cwebp -q 90 "$$img" -o "generated/$${img%.png}.webp" 2>&1 | grep -E "(Saving|Output)" || true; \
+        fi; \
+    done
+    @echo ""
+    @echo "📐 Generating responsive sizes for background images..."
+    @just generate-responsive-images
+    @echo ""
+    @echo "✅ All optimized images regenerated"
+    @echo ""
+    @echo "📊 Generated files:"
+    @cd assets/images/generated && ls -lh *.webp 2>/dev/null | head -20 || echo "No generated images found"
 
 # Show current environment info
 info:
