@@ -69,7 +69,7 @@
 # ============================================================================
 
 # Default recipe - show environment info and available commands
-@_default:
+_default:
     @echo "📦 Environment Information:"
     @echo ""
     @flox list
@@ -84,7 +84,7 @@
 lighthouse:
     @echo "🔍 Running Lighthouse performance audit..."
     @sleep 3
-    flox activate -- npx lighthouse http://localhost:8888 \
+    @flox activate -- npx lighthouse http://localhost:8888 \
         --output html \
         --output json \
         --output-path ./lighthouse-report \
@@ -96,7 +96,7 @@ lighthouse:
 lighthouse-full:
     @echo "🔍 Running comprehensive Lighthouse audit..."
     @sleep 3
-    flox activate -- npx lighthouse http://localhost:8888 \
+    @flox activate -- npx lighthouse http://localhost:8888 \
         --output html \
         --output json \
         --output-path ./lighthouse-report-full \
@@ -110,7 +110,7 @@ lighthouse-full:
 lighthouse-mobile:
     @echo "📱 Running Lighthouse mobile audit..."
     @sleep 3
-    flox activate -- npx lighthouse http://localhost:8888 \
+    @flox activate -- npx lighthouse http://localhost:8888 \
         --output html \
         --output json \
         --output-path ./lighthouse-mobile \
@@ -123,7 +123,7 @@ lighthouse-mobile:
 perf:
     @echo "⚡ Running quick performance check..."
     @sleep 3
-    flox activate -- npx lighthouse http://localhost:8888 \
+    @flox activate -- npx lighthouse http://localhost:8888 \
         --only-categories=performance \
         --output json \
         --output-path ./lighthouse-perf.json \
