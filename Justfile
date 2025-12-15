@@ -12,15 +12,14 @@
 # - imagemagick, pngquant, optipng: Image optimization tools
 #
 # Quick Start:
-#   just              # Show all available commands
-#   just dev          # Start development server
-#   just lighthouse   # Run performance audit
-#   just perf         # Quick performance score
+#   flox activate            # Enter development environment
+#   flox services start      # Start development server (http://localhost:8888)
+#   just                     # Show all available commands
+#   just lighthouse          # Run performance audit
+#   just perf                # Quick performance score
+#   flox services stop       # Stop development server
 #
 # Available Commands:
-#
-# Development:
-#   just dev                 - Start livereload server on http://localhost:8888
 #
 # Performance Testing (Lighthouse):
 #   just lighthouse          - Standard Lighthouse audit (opens HTML report)
@@ -28,12 +27,8 @@
 #   just lighthouse-mobile   - Mobile performance audit
 #   just perf                - Quick performance score check (84/100 baseline)
 #
-#   All Lighthouse commands automatically:
-#   - Start dev server in background
-#   - Run the audit
-#   - Generate HTML and JSON reports
-#   - Open report in browser (except perf)
-#   - Stop server when done
+#   Note: Ensure dev server is running (flox services start) before
+#   running Lighthouse commands
 #
 # Image Optimization:
 #   just optimize-images              - Optimize all PNG images in assets/images/
@@ -59,17 +54,18 @@
 #   lighthouse-perf.json                 - Performance score only
 #
 # Example Workflow:
-#   just info                # Check environment
+#   flox activate            # Enter environment
+#   flox services start      # Start dev server
 #   just lighthouse          # Run audit
 #   just lighthouse-mobile   # Test mobile
+#   flox services stop       # Stop dev server
 #   just clean               # Clean up reports
 #
 # Notes:
 # - Lighthouse runs via 'npx lighthouse' for cross-platform compatibility
 # - First run will auto-download Lighthouse (~1 minute)
 # - Subsequent runs are instant
-# - Dev server runs on http://localhost:8888
-# - Helper recipes (start-server-bg, stop-server) are internal utilities
+# - Dev server runs on http://localhost:8888 (managed by Flox services)
 #
 # ============================================================================
 
@@ -77,13 +73,8 @@
 @_default:
     just --list --unsorted
 
-# Start the development server
-dev:
-    @echo "🚀 Starting development server on http://localhost:8888"
-    flox activate -- livereload --port 8888
-
 # Run Lighthouse performance audit
-lighthouse: start-server-bg
+lighthouse:
     @echo "🔍 Running Lighthouse performance audit..."
     @sleep 3
     flox activate -- npx lighthouse http://localhost:8888 \
@@ -93,10 +84,9 @@ lighthouse: start-server-bg
         --view \
         --chrome-flags="--headless"
     @echo "✅ Lighthouse report generated: lighthouse-report.html"
-    @just stop-server
 
 # Run Lighthouse with detailed metrics
-lighthouse-full: start-server-bg
+lighthouse-full:
     @echo "🔍 Running comprehensive Lighthouse audit..."
     @sleep 3
     flox activate -- npx lighthouse http://localhost:8888 \
@@ -108,10 +98,9 @@ lighthouse-full: start-server-bg
         --view \
         --chrome-flags="--headless"
     @echo "✅ Full Lighthouse report generated: lighthouse-report-full.html"
-    @just stop-server
 
 # Run Lighthouse for mobile
-lighthouse-mobile: start-server-bg
+lighthouse-mobile:
     @echo "📱 Running Lighthouse mobile audit..."
     @sleep 3
     flox activate -- npx lighthouse http://localhost:8888 \
@@ -122,10 +111,9 @@ lighthouse-mobile: start-server-bg
         --view \
         --chrome-flags="--headless"
     @echo "✅ Mobile Lighthouse report generated: lighthouse-mobile.html"
-    @just stop-server
 
 # Quick performance check (just scores, no report)
-perf: start-server-bg
+perf:
     @echo "⚡ Running quick performance check..."
     @sleep 3
     flox activate -- npx lighthouse http://localhost:8888 \
@@ -136,21 +124,6 @@ perf: start-server-bg
         --chrome-flags="--headless"
     @echo "📊 Performance Score:"
     @flox activate -- node -e "const data = require('./lighthouse-perf.json'); console.log('  Performance: ' + Math.round(data.categories.performance.score * 100) + '/100');"
-    @just stop-server
-
-# Start server in background (helper)
-start-server-bg:
-    @echo "🔧 Starting server in background..."
-    @flox activate -- livereload --port 8888 > /dev/null 2>&1 & echo $$! > .server.pid
-    @sleep 2
-
-# Stop background server (helper)
-stop-server:
-    @if [ -f .server.pid ]; then \
-        echo "🛑 Stopping server..."; \
-        kill `cat .server.pid` 2>/dev/null || true; \
-        rm .server.pid; \
-    fi
 
 # Clean up generated reports
 clean:

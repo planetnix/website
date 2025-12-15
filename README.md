@@ -29,10 +29,15 @@ cd website
 flox activate
 
 # 3. Start the development server
-just dev
+flox services start
 ```
 
 That's it! Open http://localhost:8888 in your browser and start coding. Changes reload automatically.
+
+When you're done:
+```bash
+flox services stop
+```
 
 ## 🛠️ Technology Stack
 
@@ -56,11 +61,12 @@ That's it! Open http://localhost:8888 in your browser and start coding. Changes 
 We use [Just](https://github.com/casey/just) for common development tasks. Run `just` to see all available commands:
 
 ```bash
-# Development
-just dev                 # Start development server on http://localhost:8888
-just info                # Show environment information
+# Development Server (managed by Flox)
+flox services start      # Start development server on http://localhost:8888
+flox services stop       # Stop development server
+flox services status     # Check server status
 
-# Performance Testing
+# Performance Testing (requires server to be running)
 just lighthouse          # Run full Lighthouse audit (opens HTML report)
 just lighthouse-mobile   # Test mobile performance
 just perf                # Quick performance score check
@@ -72,6 +78,7 @@ just generate-favicons            # Generate all favicon and app icons
 just regenerate-all-images        # Regenerate ALL optimized images from source
 
 # Utilities
+just info                # Show environment information
 just clean               # Remove generated reports
 ```
 
@@ -160,13 +167,13 @@ We take performance seriously. Here's what we've optimized:
 3. **Make your changes**
    ```bash
    flox activate
-   just dev  # Start the dev server
+   flox services start  # Start the dev server
    # Edit files, see changes live!
    ```
 
 4. **Test your changes**
    ```bash
-   just perf  # Check performance impact
+   just perf  # Check performance impact (server must be running)
    ```
 
 5. **Commit and push**
@@ -212,8 +219,10 @@ Our CI/CD pipeline automatically:
 
 Test locally before pushing:
 ```bash
+flox services start    # Ensure server is running
 just perf              # Quick performance check
 just lighthouse        # Full audit with HTML report
+flox services stop     # Stop server when done
 ```
 
 ## 📚 Learn More
