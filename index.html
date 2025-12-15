@@ -50,11 +50,20 @@
   src: url(assets/fonts/GeistMono-400.ttf) format('truetype');
 }
 
+/* Configure pico */
+[data-theme="dark"],
 :root,
 :host {
     --pico-font-family-sans-serif: "Geist", sans-serif;
     --pico-font-family-monospace: "geist mono", monospace;
     --pico-color: #FFFFFF;
+    --pico-accordion-close-summary-color: #FFFFFF;
+    --pico-accordion-open-summary-color: #FFFFFF;
+    --pico-accordion-active-summary-color: #FFFFFF;
+    --pico-accordion-border-color: #FFFFFF;
+    --pico-accordion-close-summary-color: #FFFFFF;
+    --pico-accordion-open-summary-color: #FFFFFF;
+    --pico-icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
 /* Ensure images remain responsive with explicit dimensions */
@@ -573,6 +582,8 @@ body > .container > .content {
 
 .faq-content {
     position: relative;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5em;
 }
 
 .faq-content a {
@@ -581,6 +592,21 @@ body > .container > .content {
 }
 .faq-content a:hover {
     border-bottom: 1px solid #ffd02b;
+}
+
+.faq-content details {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 1em;
+    color: #FFFFFF;
+}
+
+.faq-content details summary:focus:not([role]) {
+    color: #FFFFFF;
+}
+
+.faq-content details div {
+    color: #ADADAD;
+    font-size: 0.8em;
 }
 
 /* Footer */
@@ -833,101 +859,108 @@ footer {
       <section class="faq-section">
         <h2 class="section-title">FAQ</h2>
         <div class="faq-content">
-          <h3>
-            How to sign up?
-          </h3>
-          <p>
-            Planet Nix is part of the <a
-              href="https://www.socallinuxexpo.org/scale/23x">SCALE
-            conference</a>. Either a full SCALE Pass or Expo Pass will provide
-            entrance to Planet Nix.
-          </p>
-
-          <h3>
-            Do I need to prepare anything?
-          </h3>
-          <p>
-            As you prepare for the event we'd like to encourage all attendees to download
-            any important repositories to their local machines and prepare their API-Keys
-            beforehand as we will get rate limited by some organizations. The Nix manual
-            shows how to configure nix to use with access-tokens. For GitHub for example we
-            recommend a fine-grained token with no extra account permissions, as it will be
-            only used for authentication purposes.
-          </p>
-
-          <h3>
-            I am interested in helping? What can I do?
-          </h3>
-          <p>
-            We are actively looking for volunteers for before, during and after
-            the event. If you are interested, please reach out to <a
-            href="mailto:planetnix@flox.dev">planetnix@flox.dev</a>
-          </p>
-
-          <h3>
-            Will there be video recording?
-          </h3>
-          <p>
-            Yes, you can view the livestream on the <a
-            href="https://www.youtube.com/@socallinuxexpo">SCaLE Youtube
-            Channel</a>.
-          </p>
-
-          <h3>
-            This website is broken! Can I fix it?
-          </h3>
-          <p>
-            Yes! The website source is at: <a
-              href="https://github.com/planetnix/website">https://github.com/planetnix/website</a>.
-          </p>
-
-          <h3>
-            What is a Unconf?
-          </h3>
-          <p>
-            An Unconference is all about you taking the lead. No predetermined
-            schedules or set topics. Have a burning question or exciting idea
-            about Nix? Grab a group, snag a table, and dive into the
-            conversation. This is your time to connect with like-minded
-            individuals and discuss whatever you're passionate about.
-          </p>
-
-          <h3>
-            How do I get to Planet Nix?
-          </h3>
-          <p>
-            The best information can be found on the <a
-              href="https://www.visitpasadena.com/convention-center/attendees/directions-parking/">Visit
-            Pasadena</a> website.
-            <h4>By plane</h4>
-            <p>
-              If you are coming from LAX, it is possible to reach the convention center via public transportation in approximately 90 minutes.
-              Head to Terminal B Lower Level and take the <a
-                href="https://www.flylax.com/flyaway-bus">FlyAway Bus</a> to <a
-                href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
-              Station</a>. Take the Metro A Line to Memorial Park Station or
-              Del Mar Station, both stations are 0.4 miles away from the
-              convention center and about a ten minute walk.
-            </p>
-            <h4>By car</h4>
-            <p>
-              There are a number of ways to get to the convention center by
-              car. See the <a
+          <details>
+            <summary>
+              How to sign up?
+            </summary>
+            <div>
+              Planet Nix is part of the <a
+                href="https://www.socallinuxexpo.org/scale/23x">SCALE
+              conference</a>. Either a full SCALE Pass or Expo Pass will provide
+              entrance to Planet Nix.
+            </div>
+          </details>
+          <details>
+            <summary>
+              Do I need to prepare anything?
+            </summary>
+            <div>
+              As you prepare for the event we'd like to encourage all attendees to download
+              any important repositories to their local machines and prepare their API-Keys
+              beforehand as we will get rate limited by some organizations. The Nix manual
+              shows how to configure nix to use with access-tokens. For GitHub for example we
+              recommend a fine-grained token with no extra account permissions, as it will be
+              only used for authentication purposes.
+            </div>
+          </details>
+          <details>
+            <summary>
+              I am interested in helping? What can I do?
+            </summary>
+            <div>
+              We are actively looking for volunteers for before, during and after
+              the event. If you are interested, please reach out to <a
+              href="mailto:planetnix@flox.dev">planetnix@flox.dev</a>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Will there be video recording?
+            </summary>
+            <div>
+              Yes, you can view the livestream on the <a
+              href="https://www.youtube.com/@socallinuxexpo">SCaLE Youtube
+              Channel</a>.
+            </div>
+          </details>
+          <details>
+            <summary>
+              This website is broken! Can I fix it?
+            </summary>
+            <div>
+              Yes! The website source is at: <a
+                href="https://github.com/planetnix/website">https://github.com/planetnix/website</a>.
+            </div>
+          </details>
+          <details>
+            <summary>
+              What is a Unconf?
+            </summary>
+            <div>
+              An Unconference is all about you taking the lead. No predetermined
+              schedules or set topics. Have a burning question or exciting idea
+              about Nix? Grab a group, snag a table, and dive into the
+              conversation. This is your time to connect with like-minded
+              individuals and discuss whatever you're passionate about.
+            </div>
+          </details>
+          <details>
+            <summary>
+              How do I get to Planet Nix?
+            </summary>
+            <div>
+              The best information can be found on the <a
                 href="https://www.visitpasadena.com/convention-center/attendees/directions-parking/">Visit
-              Pasadena</a> site for the most accurate information. There are
-              several parking structures around the convention center with a
-              daily flat rate of $15.
-            </p>
-            <h4>By metro</h4>
-            <p>
-              Head to your nearest metro stop and take the metro to <a
-                href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
-              Station</a>. Take the Metro A Line to Memorial Park Station or
-              Del Mar Station, both stations are 0.4 miles away from the
-              convention center and about a ten minute walk.
-            </p>
-          </p>
-
+              Pasadena</a> website.
+              <h4>By plane</h4>
+              <p>
+                If you are coming from LAX, it is possible to reach the convention center via public transportation in approximately 90 minutes.
+                Head to Terminal B Lower Level and take the <a
+                  href="https://www.flylax.com/flyaway-bus">FlyAway Bus</a> to <a
+                  href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
+                Station</a>. Take the Metro A Line to Memorial Park Station or
+                Del Mar Station, both stations are 0.4 miles away from the
+                convention center and about a ten minute walk.
+              </p>
+              <h4>By car</h4>
+              <p>
+                There are a number of ways to get to the convention center by
+                car. See the <a
+                  href="https://www.visitpasadena.com/convention-center/attendees/directions-parking/">Visit
+                Pasadena</a> site for the most accurate information. There are
+                several parking structures around the convention center with a
+                daily flat rate of $15.
+              </p>
+              <h4>By metro</h4>
+              <p>
+                Head to your nearest metro stop and take the metro to <a
+                  href="https://metrolinktrains.com/rider-info/general-info/stations/l.a.-union-station/">Union
+                Station</a>. Take the Metro A Line to Memorial Park Station or
+                Del Mar Station, both stations are 0.4 miles away from the
+                convention center and about a ten minute walk.
+              </p>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -946,5 +979,15 @@ footer {
   </main>
 
 
+  <script>
+let accordion = document.querySelectorAll('.faq-content details')
+accordion.forEach(function (d, index) {
+  d.onclick = () => {
+    accordion.forEach(function(c, i) {
+      index === i ?'':c.removeAttribute('open')
+    });
+  };
+});
+  </script>
 </body>
 </html>
