@@ -644,6 +644,22 @@ footer {
     }
 }
 
+.footer-callout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10%;
+    border-top: 1px solid #FFF;
+    padding: 1em;
+    line-height: 1.8em;
+    gap: 3em;
+}
+
+.footer-callout a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .footer-socials {
     display: flex;
     flex-direction: row;
@@ -889,13 +905,34 @@ footer {
         <div class="faq-content">
           <details>
             <summary>
+              What is the Community Table CFP? Who should apply to exhibit
+              at PlanetNix?
+            </summary>
+            <div>
+              The Community Table CFP is an application-based opportunity to
+              exhibit a Nix-related open source project or technology at Planet
+              Nix — at no cost. We’re looking for teams or individuals with
+              something concrete to show (demos, tools, workflows, or live
+              projects) who want to spark technical conversations, share their
+              work, and get feedback from a highly engaged Nix audience.
+              Exhibitors are selected by the PlanetNix organizing team based
+              on relevance to the Nix ecosystem, quality of the submission, and
+              contribution to a vibrant event space. Accepted exhibitors
+              receive a table with power and inclusion on the PlanetNix
+             website; any additional AV or special requirements are handled by
+             the exhibitor.
+             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHPJYFi-OuWJzbeJhgGz0b-hj0_CemLPvKgA3Bvg4nrfnA4A/viewform">You can apply here</a>.
+            </div>
+          </details>
+          <details>
+            <summary>
               How to sign up?
             </summary>
             <div>
-              Planet Nix is part of the <a
-                href="https://www.socallinuxexpo.org/scale/23x">SCALE
-              conference</a>. Either a full SCALE Pass or Expo Pass will provide
-              entrance to Planet Nix.
+              PlanetNix is part of the
+              <a href="https://www.socallinuxexpo.org/scale/23x">SCALE conference</a>.
+              Either a full SCALE Pass or Expo Pass will provide entrance to
+              PlanetNix.
             </div>
           </details>
           <details>
@@ -903,12 +940,13 @@ footer {
               Do I need to prepare anything?
             </summary>
             <div>
-              As you prepare for the event we'd like to encourage all attendees to download
-              any important repositories to their local machines and prepare their API-Keys
-              beforehand as we will get rate limited by some organizations. The Nix manual
-              shows how to configure nix to use with access-tokens. For GitHub for example we
-              recommend a fine-grained token with no extra account permissions, as it will be
-              only used for authentication purposes.
+              As you prepare for the event we'd like to encourage all attendees
+              to download any important repositories to their local machines
+              and prepare their API-Keys beforehand as we will get rate limited
+              by some organizations. The Nix manual shows how to configure nix
+              to use with access-tokens. For GitHub for example we recommend a
+              fine-grained token with no extra account permissions, as it will
+              be only used for authentication purposes.
             </div>
           </details>
           <details>
@@ -916,9 +954,9 @@ footer {
               I am interested in helping? What can I do?
             </summary>
             <div>
-              We are actively looking for volunteers for before, during and after
-              the event. If you are interested, please reach out to <a
-              href="mailto:planetnix@flox.dev">planetnix@flox.dev</a>
+              We are actively looking for volunteers for before, during and
+              after the event. If you are interested, please reach out to 
+              <a href="mailto:planetnix@flox.dev">planetnix@flox.dev</a>
             </div>
           </details>
           <details>
@@ -954,7 +992,7 @@ footer {
           </details>
           <details>
             <summary>
-              How do I get to Planet Nix?
+              How do I get to PlanetNix?
             </summary>
             <div>
               <p>
@@ -997,6 +1035,9 @@ footer {
       </section>
 
       <footer>
+        <div class="footer-callout">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHPJYFi-OuWJzbeJhgGz0b-hj0_CemLPvKgA3Bvg4nrfnA4A/viewform">Apply for the Community Table CFP</a>
+        </div>
         <div class="footer-socials">
           <a href="https://x.com/planetnixconf">
             <img src="assets/images/twitter.svg" alt="PlanetNix Twitter/X" width="24" height="24">
