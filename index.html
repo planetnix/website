@@ -345,6 +345,23 @@ body > .container > .content {
   color: #757575;
 }
 
+/* Announcement Banner */
+.announcement-banner {
+  background-color: #FFD02B;
+  text-align: center;
+  padding: 0.6em 1em;
+  font-family: var(--pico-font-family-monospace);
+  font-size: 16px;
+  color: #000000;
+  z-index: 99;
+  position: relative;
+}
+.announcement-banner a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* About Section */
 .about-section {
     position: relative;
@@ -782,6 +799,10 @@ footer {
 </head>
 <body data-theme="dark">
   <main class="container">
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+      &#127867; Nix &amp; Friends Happy Hour! RSVP to join us after Planet Nix &#8594; <a href="https://luma.com/gibr7uz9">Save your spot today</a>
+    </div>
     <!-- CFP Section (uncomment when CFP opens)
     <section class="cfp-section">
       <div class="cfp-callout">Call for Papers Open Now!</div>
