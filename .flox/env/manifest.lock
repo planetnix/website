@@ -1,7 +1,7 @@
 {
   "lockfile-version": 1,
   "manifest": {
-    "version": 1,
+    "schema-version": "1.12.0",
     "install": {
       "clean-css-cli": {
         "pkg-path": "clean-css-cli"
@@ -14,19 +14,23 @@
         ]
       },
       "imagemagick": {
-        "pkg-path": "imagemagick"
+        "pkg-path": "imagemagick",
+        "outputs": "all"
       },
       "just": {
-        "pkg-path": "just"
+        "pkg-path": "just",
+        "outputs": "all"
       },
       "libwebp": {
         "pkg-path": "libwebp"
       },
       "livereload": {
-        "pkg-path": "python313Packages.livereload"
+        "pkg-path": "python313Packages.livereload",
+        "outputs": "all"
       },
       "nodejs": {
-        "pkg-path": "nodejs"
+        "pkg-path": "nodejs",
+        "outputs": "all"
       },
       "optipng": {
         "pkg-path": "optipng"
@@ -49,17 +53,17 @@
     {
       "attr_path": "clean-css-cli",
       "broken": false,
-      "derivation": "/nix/store/bk47cvvjbr1fh5mn2pqdyqij68rg4nb5-clean-css-cli-5.6.3.drv",
+      "derivation": "/nix/store/kxk5n0srzsml0r6wv96i5f2k2ajy9306-clean-css-cli-5.6.3.drv",
       "description": "Command-line interface to the clean-css CSS optimization library",
       "install_id": "clean-css-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "clean-css-cli-5.6.3",
       "pname": "clean-css-cli",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:54:43.943535Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:13:44.021179Z",
       "stabilities": [
         "unstable"
       ],
@@ -69,7 +73,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/cbbjk2bq8kmnl4cz4dhr7rmpln8830kk-clean-css-cli-5.6.3"
+        "out": "/nix/store/4ga29bzzk2l0qhr36yzm8w48w3kkddgq-clean-css-cli-5.6.3"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -78,17 +82,17 @@
     {
       "attr_path": "clean-css-cli",
       "broken": false,
-      "derivation": "/nix/store/5i210wgrnfylqa2pj3qkk93al46q5f6m-clean-css-cli-5.6.3.drv",
+      "derivation": "/nix/store/gp7y94yxhp1wk83pn411didmivv4254k-clean-css-cli-5.6.3.drv",
       "description": "Command-line interface to the clean-css CSS optimization library",
       "install_id": "clean-css-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "clean-css-cli-5.6.3",
       "pname": "clean-css-cli",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:03:54.422311Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:44:32.773883Z",
       "stabilities": [
         "unstable"
       ],
@@ -98,7 +102,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/wfjas5w0mpiysz8450d3y540i7yibg5i-clean-css-cli-5.6.3"
+        "out": "/nix/store/jcp8x000bji27h8ibldrpry2k0c8jcnh-clean-css-cli-5.6.3"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -107,17 +111,17 @@
     {
       "attr_path": "clean-css-cli",
       "broken": false,
-      "derivation": "/nix/store/jziwgc8l9kdg0iw3qb2p0ni23s9lgvwk-clean-css-cli-5.6.3.drv",
+      "derivation": "/nix/store/v64g8wkp7kvr3y5mjy7p51mql5cdzxnk-clean-css-cli-5.6.3.drv",
       "description": "Command-line interface to the clean-css CSS optimization library",
       "install_id": "clean-css-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "clean-css-cli-5.6.3",
       "pname": "clean-css-cli",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:13:57.846055Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:14:36.697423Z",
       "stabilities": [
         "unstable"
       ],
@@ -127,7 +131,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/z7cv3vxf0s0mxy2jyh5qkdf5inc8631f-clean-css-cli-5.6.3"
+        "out": "/nix/store/1xk0qclb7k5qzkyd14z7dv3fhy24z6ny-clean-css-cli-5.6.3"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -136,17 +140,17 @@
     {
       "attr_path": "clean-css-cli",
       "broken": false,
-      "derivation": "/nix/store/j9sz6cjp87k9hw0blyrijw5har0kkaqj-clean-css-cli-5.6.3.drv",
+      "derivation": "/nix/store/sw3ym4n034wxscl0h0x42wxq1jd0yqi3-clean-css-cli-5.6.3.drv",
       "description": "Command-line interface to the clean-css CSS optimization library",
       "install_id": "clean-css-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "clean-css-cli-5.6.3",
       "pname": "clean-css-cli",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:23:17.704714Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:47:35.778451Z",
       "stabilities": [
         "unstable"
       ],
@@ -156,7 +160,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/f1mzbqc66qsscjqq7h2qwihjyz60zm91-clean-css-cli-5.6.3"
+        "out": "/nix/store/4i7xvm7h84llgsn5zsd59slbz5d3sqdy-clean-css-cli-5.6.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -165,27 +169,27 @@
     {
       "attr_path": "google-lighthouse",
       "broken": false,
-      "derivation": "/nix/store/khifp45mz1mishb73c9d10grdzd3zdmj-google-lighthouse-12.8.2.drv",
+      "derivation": "/nix/store/rffrihnb2clqldhy5mpa10z9pnrklqg1-google-lighthouse-13.3.0.drv",
       "description": "Automated auditing, performance metrics, and best practices for the web",
       "install_id": "google-lighthouse",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "google-lighthouse-12.8.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "google-lighthouse-13.3.0",
       "pname": "google-lighthouse",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:03:56.295086Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:44:35.021753Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "12.8.2",
+      "version": "13.3.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/hxjrj69vnv80r74zc0h1fr9iwqhy5iv5-google-lighthouse-12.8.2"
+        "out": "/nix/store/akqkna9hp8n2dw3jkp2vkzj48mnxlblk-google-lighthouse-13.3.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -194,27 +198,27 @@
     {
       "attr_path": "google-lighthouse",
       "broken": false,
-      "derivation": "/nix/store/7z7d9f6b2yz7361dknym4swf495zzbmk-google-lighthouse-12.8.2.drv",
+      "derivation": "/nix/store/7b3ip23hg3g71njx2slyqszs5zanrvak-google-lighthouse-13.3.0.drv",
       "description": "Automated auditing, performance metrics, and best practices for the web",
       "install_id": "google-lighthouse",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "google-lighthouse-12.8.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "google-lighthouse-13.3.0",
       "pname": "google-lighthouse",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:23:19.778607Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:47:38.331280Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "12.8.2",
+      "version": "13.3.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/3i9wz41hp5w4cq4ms7y3c35sz9nxkzjd-google-lighthouse-12.8.2"
+        "out": "/nix/store/65v73ywxiqrbri6sfhqjykw5lil79y5b-google-lighthouse-13.3.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -223,29 +227,29 @@
     {
       "attr_path": "imagemagick",
       "broken": false,
-      "derivation": "/nix/store/h5pj245w1lpgff141vjjiq9ckb6nlx4m-imagemagick-7.1.2-8.drv",
+      "derivation": "/nix/store/88f8nx403rgljnmran8hkd8a86dbq8fa-imagemagick-7.1.2-23.drv",
       "description": "Software suite to create, edit, compose, or convert bitmap images",
       "install_id": "imagemagick",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "imagemagick-7.1.2-8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "imagemagick-7.1.2-23",
       "pname": "imagemagick",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:54:58.092226Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:01.513680Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.2-8",
+      "version": "7.1.2-23",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/0a3ysi0dx9iz1i5v0xj85zzc8yjavlrv-imagemagick-7.1.2-8-dev",
-        "doc": "/nix/store/1qna9ngsjxq8hy9chg8hqwsy1lg0f6bw-imagemagick-7.1.2-8-doc",
-        "out": "/nix/store/dzaplnfxc976z4dm94vb5c7kc8956nks-imagemagick-7.1.2-8"
+        "dev": "/nix/store/4as8dc7lb02lnnqdi7278705h7ayc4zg-imagemagick-7.1.2-23-dev",
+        "doc": "/nix/store/kmzihbxg9n3j6l12fr1l4mz0lqmqrim9-imagemagick-7.1.2-23-doc",
+        "out": "/nix/store/paxfk2s1gb9qylklxdlvicc5x0hf3fy7-imagemagick-7.1.2-23"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -254,29 +258,30 @@
     {
       "attr_path": "imagemagick",
       "broken": false,
-      "derivation": "/nix/store/74ikbb0z6zqi17vv6qq0iy17kvd88wbj-imagemagick-7.1.2-8.drv",
+      "derivation": "/nix/store/d3v2rcbvb8hbx0khm5vy428awi1xlshi-imagemagick-7.1.2-23.drv",
       "description": "Software suite to create, edit, compose, or convert bitmap images",
       "install_id": "imagemagick",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "imagemagick-7.1.2-8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "imagemagick-7.1.2-23",
       "pname": "imagemagick",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:04:14.372688Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:44:54.771496Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.2-8",
+      "version": "7.1.2-23",
       "outputs_to_install": [
+        "out",
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/gwvsj5l3bpx6jbh5a3qnfk11s3awa8ll-imagemagick-7.1.2-8-dev",
-        "doc": "/nix/store/znvckz4a0dlfwzpdwbwgfffmidp1baig-imagemagick-7.1.2-8-doc",
-        "out": "/nix/store/7blk6gy4bmi3vrm7k6z0vkw1a2f1janp-imagemagick-7.1.2-8"
+        "dev": "/nix/store/z77shkv7hqjffi2zygbl9gxspswmrqvs-imagemagick-7.1.2-23-dev",
+        "doc": "/nix/store/fk4qf1lj4yv486hk2v55p3yddxgskkl8-imagemagick-7.1.2-23-doc",
+        "out": "/nix/store/nqqi92858bzd9sx119kcyrybbriaz4ab-imagemagick-7.1.2-23"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -285,29 +290,29 @@
     {
       "attr_path": "imagemagick",
       "broken": false,
-      "derivation": "/nix/store/imlwh8q0ka4h3ls4fwsrq13kb3ih3xr7-imagemagick-7.1.2-8.drv",
+      "derivation": "/nix/store/rf0hfv4yyh8nm6f5hv9gsinimidhkd2v-imagemagick-7.1.2-23.drv",
       "description": "Software suite to create, edit, compose, or convert bitmap images",
       "install_id": "imagemagick",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "imagemagick-7.1.2-8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "imagemagick-7.1.2-23",
       "pname": "imagemagick",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:14:12.444546Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:14:53.715354Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.2-8",
+      "version": "7.1.2-23",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/58j6z4b5pg55xvq99pbgk9bd0i30xzcl-imagemagick-7.1.2-8-dev",
-        "doc": "/nix/store/aw9v3sdqm8023qq8z7nkf62b3w3jbi47-imagemagick-7.1.2-8-doc",
-        "out": "/nix/store/xj3hbbcfbr8dgviwg8yaw6bnw5asxbs3-imagemagick-7.1.2-8"
+        "dev": "/nix/store/yxdrxin5kv207nmhgg1sgf5va467b0z9-imagemagick-7.1.2-23-dev",
+        "doc": "/nix/store/90naf9g7bjbhjj544wdql90dm7yad2bg-imagemagick-7.1.2-23-doc",
+        "out": "/nix/store/52dp7qa7c566z1px4fq50in87jx6s3yb-imagemagick-7.1.2-23"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -316,29 +321,30 @@
     {
       "attr_path": "imagemagick",
       "broken": false,
-      "derivation": "/nix/store/7ss86p3m020zc69s7y0pp7pra0yprcpd-imagemagick-7.1.2-8.drv",
+      "derivation": "/nix/store/cqq7r0qbpgh9j6y7z39bs7n6brn0xg3m-imagemagick-7.1.2-23.drv",
       "description": "Software suite to create, edit, compose, or convert bitmap images",
       "install_id": "imagemagick",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "imagemagick-7.1.2-8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "imagemagick-7.1.2-23",
       "pname": "imagemagick",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:23:38.123590Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:47:58.504450Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.2-8",
+      "version": "7.1.2-23",
       "outputs_to_install": [
+        "out",
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/7dshaawa31ri8g7qffb3kbgy3jwqhkl2-imagemagick-7.1.2-8-dev",
-        "doc": "/nix/store/lp3vnmaw0w0lnkmy1b15qa3ay7cr73fv-imagemagick-7.1.2-8-doc",
-        "out": "/nix/store/xdckbi96kj51j8qxbj2m6bag3v83hn8q-imagemagick-7.1.2-8"
+        "dev": "/nix/store/mqn50k3viz5wb0gwbdfwb23v7l32kfxf-imagemagick-7.1.2-23-dev",
+        "doc": "/nix/store/fqly9ymadz5cj8kq18wv2flq45m00rs1-imagemagick-7.1.2-23-doc",
+        "out": "/nix/store/vwalk1kcnb5mr5c5c8100a96r9kgq4g2-imagemagick-7.1.2-23"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -347,30 +353,30 @@
     {
       "attr_path": "just",
       "broken": false,
-      "derivation": "/nix/store/xa4ji0rg0r5richc3jmbi5285vd7x8nf-just-1.43.1.drv",
+      "derivation": "/nix/store/qayl4w7mfizkldr60008cphxz28f7yjm-just-1.51.0.drv",
       "description": "Handy way to save and run project-specific commands",
       "install_id": "just",
       "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "just-1.43.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "just-1.51.0",
       "pname": "just",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:54:58.699398Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:02.321902Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.43.1",
+      "version": "1.51.0",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/g2z02i3a2z17h9cmx04sp7zpzzgzkqh8-just-1.43.1-doc",
-        "man": "/nix/store/y8ggbr7rq06mpqsdckpdsxzhjkspw63g-just-1.43.1-man",
-        "out": "/nix/store/g6cidwix7lzzb0i5lpisvb7gx051qsc1-just-1.43.1"
+        "doc": "/nix/store/d0n7b7xd2miyja6m2nlzc2szj0gqzgxb-just-1.51.0-doc",
+        "man": "/nix/store/48iac05gjz4kjpx605hcgn95an8ary9q-just-1.51.0-man",
+        "out": "/nix/store/18ml04rix1526kmcv5fcir6n7cb8lxyf-just-1.51.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -379,30 +385,30 @@
     {
       "attr_path": "just",
       "broken": false,
-      "derivation": "/nix/store/k4j49c343j0zasiamm81ylpkvihbyc4y-just-1.43.1.drv",
+      "derivation": "/nix/store/21sazfphih8v3qrf16swhbp2hi4bvjha-just-1.51.0.drv",
       "description": "Handy way to save and run project-specific commands",
       "install_id": "just",
       "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "just-1.43.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "just-1.51.0",
       "pname": "just",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:04:15.460660Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:44:56.041064Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.43.1",
+      "version": "1.51.0",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/99qn6axss3rk7c681rkhj9zza0ax2i74-just-1.43.1-doc",
-        "man": "/nix/store/59aflmjxv0qbkaqzmjni4yydg873dl5v-just-1.43.1-man",
-        "out": "/nix/store/ni4jn8rsn0h49lng7hdq6584zc4gpy9l-just-1.43.1"
+        "doc": "/nix/store/ppj3c78k6x3bql77f3mgrjjrxb2jjc0q-just-1.51.0-doc",
+        "man": "/nix/store/8ygmlmpxmggc2wqbkz1yhf7fz5nwg084-just-1.51.0-man",
+        "out": "/nix/store/6q8i59br2gzxnqax4dz3g1fmkwp2mfs2-just-1.51.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -411,30 +417,30 @@
     {
       "attr_path": "just",
       "broken": false,
-      "derivation": "/nix/store/66w205j74zfnp4fmwi7rggs8hg1kxrlh-just-1.43.1.drv",
+      "derivation": "/nix/store/y4m13kj7shshrl3kai9j827k7g1rcyjc-just-1.51.0.drv",
       "description": "Handy way to save and run project-specific commands",
       "install_id": "just",
       "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "just-1.43.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "just-1.51.0",
       "pname": "just",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:14:13.092487Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:14:54.494733Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.43.1",
+      "version": "1.51.0",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/kqx5lgjwpaipi7whnydwkl72alwvn5jz-just-1.43.1-doc",
-        "man": "/nix/store/j67aa2bj6ssz61x4bh0ga0z1qzzv3prp-just-1.43.1-man",
-        "out": "/nix/store/aa9459rdk1lzj2yd27csaasn9hb98ckr-just-1.43.1"
+        "doc": "/nix/store/x5g644hwbjdlij9w37gwgg1z1h4b6qqk-just-1.51.0-doc",
+        "man": "/nix/store/144wqvh3s441y05xvzn8m16rhcqbki7d-just-1.51.0-man",
+        "out": "/nix/store/7ppiil9ycr565vqgbc18x4rpgbfgcnzy-just-1.51.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -443,30 +449,30 @@
     {
       "attr_path": "just",
       "broken": false,
-      "derivation": "/nix/store/7qy22sjsyx9jnh44lqvn2a0a2l62dbkr-just-1.43.1.drv",
+      "derivation": "/nix/store/giqf7rkyq3fbfg6glrlk19gxi5gk6svf-just-1.51.0.drv",
       "description": "Handy way to save and run project-specific commands",
       "install_id": "just",
       "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "just-1.43.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "just-1.51.0",
       "pname": "just",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:23:39.278226Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:47:59.802850Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.43.1",
+      "version": "1.51.0",
       "outputs_to_install": [
         "man",
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/idyx9h5gmcnzzqbjb50nwf30i4g1050v-just-1.43.1-doc",
-        "man": "/nix/store/ib17hahpg1vpgh1ll0r7nb6rkmilpiil-just-1.43.1-man",
-        "out": "/nix/store/kkmg0vkp9y4jp9yqgzrml0fgac9lfcyq-just-1.43.1"
+        "doc": "/nix/store/r800x8xppg70s00hw3h6x9cxpd6nh06y-just-1.51.0-doc",
+        "man": "/nix/store/p04vig0h2hj7hg5vgd74n5nphlcy23l8-just-1.51.0-man",
+        "out": "/nix/store/3j32zmchv9wd60qng1mm04yj07wf04i8-just-1.51.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -475,17 +481,17 @@
     {
       "attr_path": "libwebp",
       "broken": false,
-      "derivation": "/nix/store/c3icazdmv6jhycskgxwmijh30bvc5czk-libwebp-1.6.0.drv",
+      "derivation": "/nix/store/iks5mrlgm8iibap3kldg3pna5apf7v3k-libwebp-1.6.0.drv",
       "description": "Tools and library for the WebP image format",
       "install_id": "libwebp",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "libwebp-1.6.0",
       "pname": "libwebp",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:55:00.636729Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:04.714974Z",
       "stabilities": [
         "unstable"
       ],
@@ -495,7 +501,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/n6p9lh1gh645h9ac66iqmpcb0lb1j4mr-libwebp-1.6.0"
+        "out": "/nix/store/29422zhl8b4pldca52ynskii2zxklml3-libwebp-1.6.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -504,17 +510,47 @@
     {
       "attr_path": "libwebp",
       "broken": false,
-      "derivation": "/nix/store/nmk7nvypdy26g0gkanff2mdr7gvk5g5b-libwebp-1.6.0.drv",
+      "derivation": "/nix/store/z5r6syqr4b6zwg79dziaq9ikckl5564s-libwebp-1.6.0.drv",
       "description": "Tools and library for the WebP image format",
       "install_id": "libwebp",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "libwebp-1.6.0",
       "pname": "libwebp",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:04:19.454908Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:45:00.249919Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.6.0",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3jkvfbw794mxaddmhkbp6vkx2d4azvyd-libwebp-1.6.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "libwebp",
+      "broken": false,
+      "derivation": "/nix/store/sp8g1flmi7xxjni4r634awf1d6yr7n2q-libwebp-1.6.0.drv",
+      "description": "Tools and library for the WebP image format",
+      "install_id": "libwebp",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "libwebp-1.6.0",
+      "pname": "libwebp",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:14:56.729550Z",
       "stabilities": [
         "unstable"
       ],
@@ -524,36 +560,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/yj01rplw2k8ldgqdgjajm17yvr28004r-libwebp-1.6.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "libwebp",
-      "broken": false,
-      "derivation": "/nix/store/7cpbix5njr66rmzgxzkv98jjsknccb1r-libwebp-1.6.0.drv",
-      "description": "Tools and library for the WebP image format",
-      "install_id": "libwebp",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "libwebp-1.6.0",
-      "pname": "libwebp",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:14:15.135410Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.6.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/22cpx27kbcagc4bbgk4bf95faig8cc5k-libwebp-1.6.0"
+        "out": "/nix/store/0srjc1mmi21066iqpzr9d05qhmg9f51s-libwebp-1.6.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -562,27 +569,28 @@
     {
       "attr_path": "libwebp",
       "broken": false,
-      "derivation": "/nix/store/krbshhzhds81hkmc687wfjcbrrprrhgx-libwebp-1.6.0.drv",
+      "derivation": "/nix/store/aahg2zbd0rr0ssp74jmz5yyx9d1dbb0d-libwebp-1.6.0.drv",
       "description": "Tools and library for the WebP image format",
       "install_id": "libwebp",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "libwebp-1.6.0",
       "pname": "libwebp",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:23:43.333006Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:48:04.015113Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
       "version": "1.6.0",
       "outputs_to_install": [
+        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/bcv98jffnvqxvyncf1bayz50r9wj7g3q-libwebp-1.6.0"
+        "out": "/nix/store/40kvg6g8ww9k9d116fiv7r9kwxhg4n7s-libwebp-1.6.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -591,17 +599,17 @@
     {
       "attr_path": "python313Packages.livereload",
       "broken": false,
-      "derivation": "/nix/store/k2sr7inri3bpnvybf45imbgbhk8v30ns-python3.13-livereload-2.7.1.drv",
+      "derivation": "/nix/store/cykkjkzl89s6psz9ppm8g7k1b8ggxmf5-python3.13-livereload-2.7.1.drv",
       "description": "Runs a local server that reloads as you develop",
       "install_id": "livereload",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "python3.13-livereload-2.7.1",
       "pname": "livereload",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:55:48.272759Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:36.390389Z",
       "stabilities": [
         "unstable"
       ],
@@ -611,8 +619,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/dnbj4krbpqvwkraishp8qljghzqsjwcv-python3.13-livereload-2.7.1-dist",
-        "out": "/nix/store/rdyhy2przrd5dvwnhrls91khnc7xm3pw-python3.13-livereload-2.7.1"
+        "dist": "/nix/store/qadkllwrs5zmn7qn8hbd55qc93r9yydz-python3.13-livereload-2.7.1-dist",
+        "out": "/nix/store/nhz7w41y7gwdqng4wnzn63fjnwkf63lv-python3.13-livereload-2.7.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -621,17 +629,17 @@
     {
       "attr_path": "python313Packages.livereload",
       "broken": false,
-      "derivation": "/nix/store/07hqanz6zkipv7yflpd7rk45z71rbf2a-python3.13-livereload-2.7.1.drv",
+      "derivation": "/nix/store/pvdhqlfhifak6kp678akrzf9dmd333bz-python3.13-livereload-2.7.1.drv",
       "description": "Runs a local server that reloads as you develop",
       "install_id": "livereload",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "python3.13-livereload-2.7.1",
       "pname": "livereload",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:05:33.985285Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:45:49.119404Z",
       "stabilities": [
         "unstable"
       ],
@@ -641,8 +649,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/xanmwsf8sblbvxsn81l7d07sr8vkswq5-python3.13-livereload-2.7.1-dist",
-        "out": "/nix/store/jaw2si5w3z7zsr9hczylgmw6wm0nrn5w-python3.13-livereload-2.7.1"
+        "dist": "/nix/store/zzp0k74nlkd0qhr79c9pd1yw1v7vvzkj-python3.13-livereload-2.7.1-dist",
+        "out": "/nix/store/124d6fdrjyx9jackyspmf5rwvgqnysfn-python3.13-livereload-2.7.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -651,17 +659,17 @@
     {
       "attr_path": "python313Packages.livereload",
       "broken": false,
-      "derivation": "/nix/store/34hl55cb7a2qz0ccmic3hm1dy943fz62-python3.13-livereload-2.7.1.drv",
+      "derivation": "/nix/store/5s2ma45dfnmrl1zxb5ivrfvkbalva8vm-python3.13-livereload-2.7.1.drv",
       "description": "Runs a local server that reloads as you develop",
       "install_id": "livereload",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "python3.13-livereload-2.7.1",
       "pname": "livereload",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:15:07.238425Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:15:30.220495Z",
       "stabilities": [
         "unstable"
       ],
@@ -671,8 +679,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/n6vsc5sy4lv2g7vfgacrklwmrg0vnppb-python3.13-livereload-2.7.1-dist",
-        "out": "/nix/store/ipzpdks3r8isp2wx4kbp5hm3hrvkgliv-python3.13-livereload-2.7.1"
+        "dist": "/nix/store/5wpr2a669vk3pj69sl26mlr5x5wg6miq-python3.13-livereload-2.7.1-dist",
+        "out": "/nix/store/li4n6j2lvissaynzrifmwc62gh2kbiay-python3.13-livereload-2.7.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -681,17 +689,17 @@
     {
       "attr_path": "python313Packages.livereload",
       "broken": false,
-      "derivation": "/nix/store/c42ilcc1lh91lbrxq1k1fx4x4qyycv3r-python3.13-livereload-2.7.1.drv",
+      "derivation": "/nix/store/5czbpwvcrgi50p7bkw02gz3n337hkj7q-python3.13-livereload-2.7.1.drv",
       "description": "Runs a local server that reloads as you develop",
       "install_id": "livereload",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "python3.13-livereload-2.7.1",
       "pname": "livereload",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:25:00.955242Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:48:51.150296Z",
       "stabilities": [
         "unstable"
       ],
@@ -701,8 +709,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/9br7xjxzg7b90fqq3rs3hwg578c8plc8-python3.13-livereload-2.7.1-dist",
-        "out": "/nix/store/09aw33m97k373ryp7bg88m7gnc4mzh7k-python3.13-livereload-2.7.1"
+        "dist": "/nix/store/y86lyiypfs1py3na652sfc8p2a4d7c4w-python3.13-livereload-2.7.1-dist",
+        "out": "/nix/store/kp357nfzsjhgkvl5krw764c06iydvfc2-python3.13-livereload-2.7.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -711,29 +719,27 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/x9g1nm5wwc7bycyw0q9k8fl03brz5yar-nodejs-22.21.1.drv",
+      "derivation": "/nix/store/vbx35am7lar9zvwhk4nfl3lysmbd0ils-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "nodejs-22.21.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:55:05.864189Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:10.752563Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "22.21.1",
+      "version": "24.15.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/bkir3agnj2cvpx80a0z1lj50pg2dhddi-nodejs-22.21.1-dev",
-        "libv8": "/nix/store/ivbmw7d10pxzkrz5397bimhqwwlrc8gp-nodejs-22.21.1-libv8",
-        "out": "/nix/store/92igwjsd6av0pg8dvygirhdwahwq2sh7-nodejs-22.21.1"
+        "out": "/nix/store/3mvbmkd7lmxi3xlka1avra24flwbgjv9-nodejs-24.15.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -742,29 +748,27 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/07m9qkb2rvy59x90w3hi9nykdxf409x8-nodejs-22.21.1.drv",
+      "derivation": "/nix/store/zc41z1042wi0d1gmyc8mlwv5av8fds2q-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "nodejs-22.21.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:04:31.849814Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:45:13.939576Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "22.21.1",
+      "version": "24.15.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/1akvaqvrp0cf6pd7mkqy7m3gnzc3wfd7-nodejs-22.21.1-dev",
-        "libv8": "/nix/store/ykj9hi9qv7gwxnbg2vh6ca00w9zsbhm0-nodejs-22.21.1-libv8",
-        "out": "/nix/store/hps7k16bd9isj7pfsjzg7q0wgvrw47kn-nodejs-22.21.1"
+        "out": "/nix/store/rmdjmd0iy5zlyg0j2i1cd0s7ha1562fs-nodejs-24.15.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -773,29 +777,27 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/j1fpqmshmrxx52k2xqqrv5c718y6sjih-nodejs-22.21.1.drv",
+      "derivation": "/nix/store/f0ay9hny5gn4c0lfrb95xrakm7yf3s2q-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "nodejs-22.21.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:14:20.707971Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:15:02.646495Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "22.21.1",
+      "version": "24.15.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/haa4773lz7wfhnql05181azh4z5141r7-nodejs-22.21.1-dev",
-        "libv8": "/nix/store/0pswqdxlx8y0v54gq0ixwps19agv6bds-nodejs-22.21.1-libv8",
-        "out": "/nix/store/wfjyiwara336j7r1v0ia3kib8779wzwf-nodejs-22.21.1"
+        "out": "/nix/store/rhv8jiklgw2bw4ljh4nm3h3r3bpnkcl3-nodejs-24.15.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -804,29 +806,27 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/wjimqspfnxjp5y11703a1rz75cbvj4ph-nodejs-22.21.1.drv",
+      "derivation": "/nix/store/f8i8jydaqs0ngxm97c091zna2mnjb43f-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "name": "nodejs-22.21.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:23:57.507358Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:48:17.971319Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "22.21.1",
+      "version": "24.15.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dev": "/nix/store/l1idqv7ff0m2kbcqnn1yr415wyga1wxf-nodejs-22.21.1-dev",
-        "libv8": "/nix/store/farc7vk89kr367hsx0qchmahf6i6sbk1-nodejs-22.21.1-libv8",
-        "out": "/nix/store/l85fis49agvp5q1ild1rfh4rrgmn92sr-nodejs-22.21.1"
+        "out": "/nix/store/5a8ysg1jnj8jmzzyfcfw7rvpvnp5rfpa-nodejs-24.15.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -835,17 +835,17 @@
     {
       "attr_path": "optipng",
       "broken": false,
-      "derivation": "/nix/store/vji77y2gsjhiwjas4m5r9xivgw2ms8f7-optipng-7.9.1.drv",
+      "derivation": "/nix/store/saycql3b7k6krrjzabf74vgq0048vx63-optipng-7.9.1.drv",
       "description": "PNG optimizer",
       "install_id": "optipng",
       "license": "Zlib",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "optipng-7.9.1",
       "pname": "optipng",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:55:08.681282Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:16.443041Z",
       "stabilities": [
         "unstable"
       ],
@@ -855,7 +855,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/x1gn8cxwsx7633r1vby4jyfjjv0kx39a-optipng-7.9.1"
+        "out": "/nix/store/a6a1y7lnqb8cxk20idxjiqp8y07i9h57-optipng-7.9.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -864,17 +864,17 @@
     {
       "attr_path": "optipng",
       "broken": false,
-      "derivation": "/nix/store/qrwc6vj3ifds68wqw2dglggz6fh9da2g-optipng-7.9.1.drv",
+      "derivation": "/nix/store/lfsw4g4irxv63q65fkjhih3qpmcglrjz-optipng-7.9.1.drv",
       "description": "PNG optimizer",
       "install_id": "optipng",
       "license": "Zlib",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "optipng-7.9.1",
       "pname": "optipng",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:04:36.447106Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:45:21.754151Z",
       "stabilities": [
         "unstable"
       ],
@@ -884,7 +884,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/88g6ldb2agsqpdl57xz6388mmhvmayv6-optipng-7.9.1"
+        "out": "/nix/store/ji5n3pzv9fk9iyw9qpvvryv8qhik5jz0-optipng-7.9.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -893,17 +893,17 @@
     {
       "attr_path": "optipng",
       "broken": false,
-      "derivation": "/nix/store/7zx73vwpzs4hg4qvq3p42wyyjinaqrc0-optipng-7.9.1.drv",
+      "derivation": "/nix/store/7nlpdr88rls4qqkkwldkdc1gkgnd9hab-optipng-7.9.1.drv",
       "description": "PNG optimizer",
       "install_id": "optipng",
       "license": "Zlib",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "optipng-7.9.1",
       "pname": "optipng",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:14:23.777999Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:15:08.638569Z",
       "stabilities": [
         "unstable"
       ],
@@ -913,7 +913,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ihzzz48mk6rk4a316aajzw80h0v95zpy-optipng-7.9.1"
+        "out": "/nix/store/9xhicr2blyx33a9apzgni4xv1fqnqcdp-optipng-7.9.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -922,17 +922,17 @@
     {
       "attr_path": "optipng",
       "broken": false,
-      "derivation": "/nix/store/4piyvapxin1pqswbqx00964vpqvv15fm-optipng-7.9.1.drv",
+      "derivation": "/nix/store/6q1m5l9lak96ii6a3ahr9fif9kif9bkq-optipng-7.9.1.drv",
       "description": "PNG optimizer",
       "install_id": "optipng",
       "license": "Zlib",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "optipng-7.9.1",
       "pname": "optipng",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:24:02.406936Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:48:25.797393Z",
       "stabilities": [
         "unstable"
       ],
@@ -942,7 +942,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/g2b3is8swa9dy9jgpw8wmpnhm04yk23x-optipng-7.9.1"
+        "out": "/nix/store/blkwhx0hqlk9m3vvj66gh8cl7nl3n92v-optipng-7.9.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -951,17 +951,17 @@
     {
       "attr_path": "pngquant",
       "broken": false,
-      "derivation": "/nix/store/w69g4z0g4snjha4jnsn5d3af6fnnd1vd-pngquant-3.0.3.drv",
+      "derivation": "/nix/store/cxivls5fj039zsqcg7px48vk74b7g1di-pngquant-3.0.3.drv",
       "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
       "install_id": "pngquant",
       "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "pngquant-3.0.3",
       "pname": "pngquant",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T02:55:19.779087Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:14:25.849651Z",
       "stabilities": [
         "unstable"
       ],
@@ -972,8 +972,8 @@
         "out"
       ],
       "outputs": {
-        "man": "/nix/store/vbjvxmxnmixlpdr15m9597f2k2bp35jh-pngquant-3.0.3-man",
-        "out": "/nix/store/2c4n20nrnh6zl5xfmah128qbnciqlzfs-pngquant-3.0.3"
+        "man": "/nix/store/qvwg09wjr4w5fzwnp0mzgbxcdnwgqnzb-pngquant-3.0.3-man",
+        "out": "/nix/store/6h4mnz6bwhc771gq408xywsdn8wy9clp-pngquant-3.0.3"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -982,17 +982,17 @@
     {
       "attr_path": "pngquant",
       "broken": false,
-      "derivation": "/nix/store/69fjrw4crds9vg7m2izny8qy82dsi1f4-pngquant-3.0.3.drv",
+      "derivation": "/nix/store/q29s9jvxkb9p9y0r9bp1hds2bbgvmn1k-pngquant-3.0.3.drv",
       "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
       "install_id": "pngquant",
       "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "pngquant-3.0.3",
       "pname": "pngquant",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:04:52.719059Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T03:45:35.466900Z",
       "stabilities": [
         "unstable"
       ],
@@ -1003,8 +1003,8 @@
         "out"
       ],
       "outputs": {
-        "man": "/nix/store/p0b9f2c1pp0hvp1ljz95p83j8fyb8rc7-pngquant-3.0.3-man",
-        "out": "/nix/store/w4fpfg8vpic4sm6qripsmrwxslmdw2x6-pngquant-3.0.3"
+        "man": "/nix/store/hjsfn9r3nv4hm2w8b2anm2flf3aphh7c-pngquant-3.0.3-man",
+        "out": "/nix/store/mznyygcbw5s63928zx4dv546l5nqkb7i-pngquant-3.0.3"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -1013,17 +1013,17 @@
     {
       "attr_path": "pngquant",
       "broken": false,
-      "derivation": "/nix/store/vqf5jbq3ry1zrxk0sn9nl5jzjqkks5m8-pngquant-3.0.3.drv",
+      "derivation": "/nix/store/l09khm3b1l3s50r39804yrc8vpl7mv0j-pngquant-3.0.3.drv",
       "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
       "install_id": "pngquant",
       "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "pngquant-3.0.3",
       "pname": "pngquant",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:14:35.744126Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:15:18.617686Z",
       "stabilities": [
         "unstable"
       ],
@@ -1034,8 +1034,8 @@
         "out"
       ],
       "outputs": {
-        "man": "/nix/store/z584l4zs8sbfywlqndvfk56bwld2xcpp-pngquant-3.0.3-man",
-        "out": "/nix/store/7m5syywabnps0z390lbh4aymm4jwvxkl-pngquant-3.0.3"
+        "man": "/nix/store/9ycpsy4f3virwar7y0rj4dz6b9gjljy0-pngquant-3.0.3-man",
+        "out": "/nix/store/v0axkwqf1dgvbgjx9w5r81svqp5qvswx-pngquant-3.0.3"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -1044,17 +1044,17 @@
     {
       "attr_path": "pngquant",
       "broken": false,
-      "derivation": "/nix/store/gin4iyr426iv9l99yv9z5r6p41m83aj2-pngquant-3.0.3.drv",
+      "derivation": "/nix/store/kprijdnxyqjn747s30mq1rirql2mjx5z-pngquant-3.0.3.drv",
       "description": "Tool to convert 24/32-bit RGBA PNGs to 8-bit palette with alpha channel preserved",
       "install_id": "pngquant",
       "license": "[ GPL-3.0-or-later, HPND, BSD-2-Clause ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9ae611a455b90cf061d8f332b977e387bda8e1ca",
       "name": "pngquant-3.0.3",
       "pname": "pngquant",
-      "rev": "addf7cf5f383a3101ecfba091b98d0a1263dc9b8",
-      "rev_count": 908783,
-      "rev_date": "2025-12-08T09:27:56Z",
-      "scrape_date": "2025-12-10T03:24:19.521665Z",
+      "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+      "rev_count": 1014179,
+      "rev_date": "2026-06-10T06:56:03Z",
+      "scrape_date": "2026-06-12T04:48:38.136548Z",
       "stabilities": [
         "unstable"
       ],
@@ -1065,8 +1065,8 @@
         "out"
       ],
       "outputs": {
-        "man": "/nix/store/zds20g9hrf58kr6xw5qsbf2i71j41k86-pngquant-3.0.3-man",
-        "out": "/nix/store/9a4ni47s5baw28918i9rl1krfwr0v056-pngquant-3.0.3"
+        "man": "/nix/store/cfz23lsybarf9l9i1d66b4a5267c7ng0-pngquant-3.0.3-man",
+        "out": "/nix/store/99kvapc4wmbzs0gmilbcs7s8574nsab4-pngquant-3.0.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
