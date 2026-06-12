@@ -26,11 +26,22 @@ jobs:
       - name: Activate Flox environment
         run: flox activate
 
+      # Stash the PR branch's (fixed) Flox env so we can reuse it to measure the
+      # base branch. The base branch may have an older/broken env locked, which
+      # would otherwise fail `flox activate` and block the whole job.
+      - name: Save PR Flox environment
+        run: cp -r .flox /tmp/pr-flox
+
       # Test BASE branch first
       - name: Checkout base branch
         uses: actions/checkout@v4
         with:
           ref: ${{ github.base_ref }}
+
+      - name: Restore PR Flox environment onto base branch
+        run: |
+          rm -rf .flox
+          cp -r /tmp/pr-flox .flox
 
       - name: Start dev server for base branch
         run: |
