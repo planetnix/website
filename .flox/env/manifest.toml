@@ -1,15 +1,19 @@
-version = 1
+schema-version = "1.12.0"
 
 [install]
 livereload.pkg-path = "python313Packages.livereload"
+livereload.outputs = "all"
 imagemagick.pkg-path = "imagemagick"
+imagemagick.outputs = "all"
 pngquant.pkg-path = "pngquant"
 optipng.pkg-path = "optipng"
 libwebp.pkg-path = "libwebp"
 just.pkg-path = "just"
+just.outputs = "all"
 google-lighthouse.pkg-path = "google-lighthouse"
 google-lighthouse.systems = ["aarch64-linux", "x86_64-linux"]
 nodejs.pkg-path = "nodejs"
+nodejs.outputs = "all"
 clean-css-cli.pkg-path = "clean-css-cli"
 
 [hook]
