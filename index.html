@@ -546,13 +546,15 @@ body > .container > .content {
     margin: 0 19%;
 
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    /* auto-fit collapses empty tracks so a short line-up stays centered */
+    grid-template-columns: repeat(auto-fit, minmax(0, 33%));
     grid-template-rows: auto;
+    justify-content: center;
 }
 
 @media (max-width: 1024px) {
     .speakers-grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(auto-fit, minmax(0, 50%));
     }
 }
 
@@ -848,15 +850,26 @@ footer {
         </ul>
       </nav>
 
-      <!-- Speakers Section — TODO(Rok): speaker line-up TBA. Once the CFP closes,
-           either populate the cards below or point "See All Speakers" at the
-           Sessionize speakers view (see speakers.html). -->
+      <!-- Speakers Section — add a card per confirmed speaker (headshot PNG in
+           assets/images/, WebP in assets/images/generated/). Once the CFP closes,
+           consider pointing a "See All Speakers" link at the Sessionize view
+           (see speakers.html). -->
       <div id="speakers"></div>
       <section class="speakers-section">
         <div class="speakers-before-bg"></div>
         <h2 class="section-title">Speakers</h2>
-        <div style="text-align: center; font-size: 18px; position: relative; z-index: 10; margin: 0 7%;">
-          <p>Our 2027 speaker line-up will be announced soon. Stay tuned!</p>
+        <div class="speakers-grid">
+          <div>
+            <picture>
+              <source srcset="assets/images/generated/speaker_ron_efroni.webp" type="image/webp">
+              <img src="assets/images/speaker_ron_efroni.png" loading="lazy" alt="Ron Efroni" width="267" height="267">
+            </picture>
+            <h3>Ron Efroni</h3>
+            <div>CEO at Flox &amp; President at NixOS Foundation</div>
+          </div>
+        </div>
+        <div style="text-align: center; font-size: 18px; position: relative; z-index: 10; margin: 2em 7% 0;">
+          <p>More speakers to be announced soon. Stay tuned!</p>
         </div>
       </section>
 
